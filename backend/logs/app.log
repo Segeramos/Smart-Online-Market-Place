@@ -1,0 +1,218 @@
+INFO 2026-02-06 23:24:29,938 autoreload Watching for file changes with StatReloader
+INFO 2026-02-06 23:37:20,943 autoreload Watching for file changes with StatReloader
+INFO 2026-02-06 23:53:26,619 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-06 23:53:28,922 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:02:08,147 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:03:55,132 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-07 01:03:55,160 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-07 01:03:56,704 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:03:56,729 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:03:58,074 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-07 01:03:58,091 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-07 01:03:59,628 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:03:59,628 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:07:25,993 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\models.py changed, reloading.
+INFO 2026-02-07 01:07:25,994 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\models.py changed, reloading.
+INFO 2026-02-07 01:07:27,363 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:07:27,363 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:07:28,724 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\models.py changed, reloading.
+INFO 2026-02-07 01:07:28,727 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\models.py changed, reloading.
+INFO 2026-02-07 01:07:30,042 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:07:30,044 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:08:27,478 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-07 01:08:27,483 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-07 01:08:28,811 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:08:28,820 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:10:29,733 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:10:29,738 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:10:30,864 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:10:30,874 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:10:32,294 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:10:32,297 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:10:33,515 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:10:33,518 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:21:46,412 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:14,756 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:14,961 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:14,966 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:16,419 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:16,520 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:16,523 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:18,806 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:18,878 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:18,880 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-07 01:26:20,514 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:20,723 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:26:20,737 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:33:16,070 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:36:13,319 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:53:54,001 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 01:56:50,543 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-07 01:56:51,783 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:01:06,533 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\urls.py changed, reloading.
+INFO 2026-02-07 02:01:07,870 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:01:41,026 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\services.py changed, reloading.
+INFO 2026-02-07 02:01:42,310 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:02:57,061 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-07 02:02:58,391 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:03:30,370 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\urls.py changed, reloading.
+INFO 2026-02-07 02:03:31,806 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:03:43,526 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\urls.py changed, reloading.
+INFO 2026-02-07 02:03:44,789 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:06:40,188 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\urls.py changed, reloading.
+INFO 2026-02-07 02:06:41,449 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:07:01,280 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\urls.py changed, reloading.
+INFO 2026-02-07 02:07:02,458 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:07:26,340 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-07 02:07:27,632 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:07:31,120 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-07 02:07:32,309 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:07:52,145 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-07 02:07:53,315 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:10:38,676 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-07 02:10:40,057 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:10:42,429 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-07 02:10:43,805 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:11:19,443 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:20:57,515 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:32:37,865 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:41:39,721 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 02:48:52,631 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:05:00,542 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:06:42,425 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:08:32,167 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:10:11,568 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:12:20,644 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:15:37,134 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-07 03:15:38,165 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:15:59,867 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\urls.py changed, reloading.
+INFO 2026-02-07 03:16:00,949 autoreload Watching for file changes with StatReloader
+INFO 2026-02-07 03:22:45,278 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 21:51:50,812 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:01:31,579 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-08 22:01:37,464 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:01:52,624 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\urls.py changed, reloading.
+INFO 2026-02-08 22:01:55,180 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:01:58,400 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\urls.py changed, reloading.
+INFO 2026-02-08 22:02:01,374 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:03:28,071 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:07:13,265 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendorpanel\urls.py changed, reloading.
+INFO 2026-02-08 22:07:18,511 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:08:51,533 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:12:02,337 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendorpanel\views.py changed, reloading.
+INFO 2026-02-08 22:12:05,291 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:12:32,582 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:21:41,587 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:26:41,076 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-08 22:26:42,575 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:36:04,631 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:44:56,484 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:46:25,649 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-08 22:46:27,368 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:46:41,853 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:49:17,009 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\adminpanel\views.py changed, reloading.
+INFO 2026-02-08 22:49:18,707 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:49:28,498 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\adminpanel\views.py changed, reloading.
+INFO 2026-02-08 22:49:29,920 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:49:33,274 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\adminpanel\views.py changed, reloading.
+INFO 2026-02-08 22:49:34,923 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:49:41,372 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\adminpanel\views.py changed, reloading.
+INFO 2026-02-08 22:49:42,816 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:52:17,849 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 22:52:57,978 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-08 22:54:23,640 log Not Found: /
+WARNING 2026-02-08 22:54:23,641 log "GET / HTTP/1.1" 404 3092
+WARNING 2026-02-08 22:54:23,935 log Not Found: /favicon.ico
+WARNING 2026-02-08 22:54:23,936 log "GET /favicon.ico HTTP/1.1" 404 3143
+WARNING 2026-02-08 22:55:36,924 log Not Found: /api/categories/
+WARNING 2026-02-08 22:55:36,925 log "GET /api/categories/ HTTP/1.1" 404 3155
+ERROR 2026-02-08 22:57:13,563 log Internal Server Error: /api/products/categories/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 11, in get
+    categories = Category.objects(is_active=True, parent=None)
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\queryset\manager.py", line 38, in __get__
+    queryset = queryset_class(owner, owner._get_collection())
+                                     ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\document.py", line 226, in _get_collection
+    db = cls._get_db()
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\document.py", line 202, in _get_db
+    return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\connection.py", line 419, in get_db
+    conn = get_connection(alias)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\connection.py", line 321, in get_connection
+    raise ConnectionFailure(msg)
+mongoengine.connection.ConnectionFailure: You have not defined a default connection
+ERROR 2026-02-08 22:57:13,577 log "GET /api/products/categories/ HTTP/1.1" 500 110902
+ERROR 2026-02-08 23:00:48,954 log Internal Server Error: /api/products/categories/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 11, in get
+    categories = Category.objects(is_active=True, parent=None)
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\queryset\manager.py", line 38, in __get__
+    queryset = queryset_class(owner, owner._get_collection())
+                                     ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\document.py", line 226, in _get_collection
+    db = cls._get_db()
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\document.py", line 202, in _get_db
+    return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\connection.py", line 419, in get_db
+    conn = get_connection(alias)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\mongoengine\connection.py", line 321, in get_connection
+    raise ConnectionFailure(msg)
+mongoengine.connection.ConnectionFailure: You have not defined a default connection
+ERROR 2026-02-08 23:00:48,963 log "GET /api/products/categories/ HTTP/1.1" 500 110902
+INFO 2026-02-08 23:03:50,089 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-08 23:03:50,098 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-08 23:03:52,036 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 23:03:52,038 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 23:32:06,568 autoreload Watching for file changes with StatReloader
+INFO 2026-02-08 23:32:37,149 log "GET /api/products/categories/ HTTP/1.1" 200 5354
+INFO 2026-02-08 23:32:37,827 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-02-08 23:32:37,849 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-02-08 23:32:37,878 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-02-08 23:32:37,880 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-02-08 23:32:37,900 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-02-08 23:32:37,901 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-02-08 23:32:37,928 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-02-08 23:32:37,939 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-02-08 23:32:37,943 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-02-08 23:32:37,988 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-02-08 23:32:38,046 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-02-08 23:32:38,080 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533

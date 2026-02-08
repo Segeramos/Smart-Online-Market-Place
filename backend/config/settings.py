@@ -54,6 +54,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'vendors',
+    'products',
+    'core',
+    'rest_framework',
+    'adminpanel',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +137,42 @@ AUTH_USER_MODEL = 'accounts.User'
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 20  # default items per page
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+    }
+}
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {"format": "{levelname} {asctime} {module} {message}", "style": "{"}
+    },
+    "handlers": {
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": "logs/app.log",
+            "formatter": "verbose"
+        }
+    },
+    "loggers": {
+        "django": {"handlers": ["file"], "level": "INFO", "propagate": True}
+    }
+}
+
+from mongoengine import connect
+
+connect(
+    db="smart_marketplace",   # You can change this name
+    host="localhost",
+    port=27017
+)

@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import User
 from .serializers import UserSerializer
-from django.contrib.auth import authenticate
+from rest_framework_simplejwt.tokens import RefreshToken
 
 # User registration
 class RegisterView(APIView):
