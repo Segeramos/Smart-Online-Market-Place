@@ -1,123 +1,189 @@
+from django.db import transaction
+from django.db.models import F
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
-from .services import add_to_cart, remove_from_cart, get_cart, checkout
-from .models import Order, OrderItem
-from accounts.models import User
 
-# ------------------------------
-# Customer Views
-# ------------------------------
+from accounts.permissions import IsAdmin, IsVendor
+from products.models import Offer
+from vendors.models import Vendor
+from .models import CartItem, Order, OrderItem
+
 
 class CartView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        """Get all items in the user's cart"""
-        cart = get_cart(request.user.email)
-        return Response(cart)
+        items = CartItem.objects.select_related(
+            "offer", "offer__vendor", "offer__catalog_product"
+        ).filter(user=request.user)
+
+        data = []
+        subtotal = 0.0
+
+        for i in items:
+            total = float(i.offer.price) * int(i.quantity)
+            subtotal += total
+
+            data.append({
+                "id": i.id,
+                "offer_id": i.offer.id,
+                "product": i.offer.catalog_product.name,
+                "vendor": i.offer.vendor.store_name,
+                "price": i.offer.price,
+                "quantity": i.quantity,
+                "total": total,
+            })
+
+        return Response({"items": data, "subtotal": subtotal}, status=200)
 
     def post(self, request):
-        """Add a product to the cart"""
-        product_id = request.data.get("product_id")
-        quantity = request.data.get("quantity", 1)
-        try:
-            add_to_cart(request.user.email, product_id, quantity)
-            return Response({"message": "Product added to cart"})
-        except ValueError as e:
-            return Response({"error": str(e)}, status=400)
+        offer_id = request.data.get("offer_id")
+        qty = request.data.get("quantity", 1)
 
-    def delete(self, request):
-        """Remove a product from the cart"""
-        product_id = request.data.get("product_id")
-        success = remove_from_cart(request.user.email, product_id)
-        if success:
-            return Response({"message": "Product removed from cart"})
-        return Response({"error": "Product not found in cart"}, status=404)
+        try:
+            qty = int(qty)
+            if qty < 1:
+                raise ValueError()
+        except (TypeError, ValueError):
+            return Response({"error": "quantity must be a positive integer"}, status=400)
+
+        offer = Offer.objects.filter(
+            id=offer_id,
+            is_active=True,
+            vendor__status=Vendor.Status.APPROVED,
+            vendor__is_active=True,
+            catalog_product__is_active=True
+        ).first()
+
+        if not offer:
+            return Response({"error": "Offer not available"}, status=404)
+
+        item, created = CartItem.objects.get_or_create(
+            user=request.user,
+            offer=offer,
+            defaults={"quantity": qty},
+        )
+
+        if not created:
+            item.quantity = item.quantity + qty
+            item.save(update_fields=["quantity"])
+
+        return Response({"message": "Added to cart", "cart_item_id": item.id}, status=201)
 
 
 class CheckoutView(APIView):
     permission_classes = [IsAuthenticated]
 
+    @transaction.atomic
     def post(self, request):
-        """Checkout all items in the cart and create an order"""
-        try:
-            order = checkout(request.user.email)
-            return Response({"message": "Order created", "order_id": str(order.id)})
-        except ValueError as e:
-            return Response({"error": str(e)}, status=400)
+        cart_items = CartItem.objects.select_for_update().select_related(
+            "offer", "offer__vendor", "offer__catalog_product"
+        ).filter(user=request.user)
 
+        if not cart_items.exists():
+            return Response({"error": "Cart is empty"}, status=400)
 
-# ------------------------------
-# Vendor Views
-# ------------------------------
+        order = Order.objects.create(user=request.user, total_amount=0.0, status=Order.STATUS_NEW)
 
-class VendorOrderListView(APIView):
-    """Vendor view: List all orders belonging to the vendor"""
-    permission_classes = [IsAuthenticated]
+        total = 0.0
 
-    def get(self, request):
-        if request.user.role != 'vendor':
-            return Response({"error": "Unauthorized"}, status=403)
+        for ci in cart_items:
+            offer = ci.offer
 
-        # Filter orders by vendor (requires vendor field in Order model)
-        orders = Order.objects.filter(vendor=request.user)
-        data = []
-        for order in orders:
-            items = OrderItem.objects.filter(order=order)
-            products = [{"name": item.product.name, "quantity": item.quantity} for item in items]
-            data.append({
-                "order_id": str(order.id),
-                "user_email": order.user_email,
-                "total_amount": order.total_amount,
-                "status": order.status,
-                "products": products,
-                "created_at": order.created_at
-            })
-        return Response(data)
+            # Offer still valid?
+            if not offer.is_active or not offer.catalog_product.is_active:
+                return Response({"error": f"Offer {offer.id} is no longer available"}, status=400)
 
+            # Vendor still approved?
+            if offer.vendor.status != Vendor.Status.APPROVED or not offer.vendor.is_active:
+                return Response({"error": f"Vendor for offer {offer.id} is not approved"}, status=400)
 
-# ------------------------------
-# Admin Views
-# ------------------------------
+            # Atomic stock decrement
+            updated = Offer.objects.filter(
+                id=offer.id,
+                stock__gte=ci.quantity
+            ).update(stock=F("stock") - ci.quantity)
+
+            if updated != 1:
+                return Response({"error": f"Stock changed for offer {offer.id}. Try again."}, status=409)
+
+            line_total = float(offer.price) * int(ci.quantity)
+
+            OrderItem.objects.create(
+                order=order,
+                offer=offer,
+                vendor=offer.vendor,
+                catalog_product=offer.catalog_product,
+                unit_price=float(offer.price),
+                quantity=int(ci.quantity),
+                line_total=line_total,
+            )
+
+            total += line_total
+
+        order.total_amount = total
+        order.save(update_fields=["total_amount"])
+
+        cart_items.delete()
+
+        return Response(
+            {"message": "Order created", "order_id": order.id, "total_amount": order.total_amount},
+            status=201
+        )
+
 
 class OrderListView(APIView):
-    """Admin view: List all orders"""
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdmin]
 
     def get(self, request):
-        if request.user.role != 'admin':
-            return Response({"error": "Unauthorized"}, status=403)
+        orders = Order.objects.select_related("user").all().order_by("-created_at")
+        data = [{
+            "id": o.id,
+            "user": o.user.email,
+            "status": o.status,
+            "total": o.total_amount,
+            "created_at": o.created_at,
+        } for o in orders]
+        return Response(data, status=200)
 
-        orders = Order.objects.all()
-        data = []
-        for order in orders:
-            items = OrderItem.objects.filter(order=order)
-            products = [{"name": item.product.name, "quantity": item.quantity} for item in items]
-            data.append({
-                "order_id": str(order.id),
-                "user_email": order.user_email,
-                "total_amount": order.total_amount,
-                "status": order.status,
-                "products": products,
-                "created_at": order.created_at
-            })
-        return Response(data)
+
+class VendorOrderListView(APIView):
+    permission_classes = [IsVendor]
+
+    def get(self, request):
+        items = OrderItem.objects.select_related(
+            "order", "catalog_product", "vendor"
+        ).filter(vendor__user=request.user).order_by("-order__created_at")
+
+        data = [{
+            "order_id": oi.order.id,
+            "product": oi.catalog_product.name,
+            "quantity": oi.quantity,
+            "line_total": oi.line_total,
+            "order_status": oi.order.status,
+            "created_at": oi.order.created_at,
+        } for oi in items]
+
+        return Response(data, status=200)
 
 
 class UpdateOrderStatusView(APIView):
-    """Admin updates order status"""
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdmin]
 
-    def post(self, request, order_id):
-        if request.user.role != 'admin':
-            return Response({"error": "Unauthorized"}, status=403)
+    def patch(self, request, order_id):
+        new_status = request.data.get("status")
 
-        status = request.data.get("status")
+        allowed_statuses = {k for k, _ in Order.STATUS_CHOICES}
+        if new_status not in allowed_statuses:
+            return Response({"error": "Invalid status"}, status=400)
+
         order = Order.objects.filter(id=order_id).first()
         if not order:
             return Response({"error": "Order not found"}, status=404)
 
-        order.status = status
-        order.save()
-        return Response({"message": f"Order status updated to {status}"})
+        order.status = new_status
+        order.save(update_fields=["status"])
+
+        return Response({"message": "Order status updated", "status": order.status}, status=200)

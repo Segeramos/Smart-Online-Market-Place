@@ -1,83 +1,84 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .models import Category, Product
-from .serializers import CategorySerializer, ProductSerializer
-from .services import create_product
+from rest_framework import status
 
-# Public Endpoints
+from .models import Category, CatalogProduct, Offer
+from .serializers import CategorySerializer, CatalogProductSerializer, OfferSerializer
+
+
 class CategoryListView(APIView):
     def get(self, request):
-        categories = Category.objects(is_active=True, parent=None)
-        serializer = CategorySerializer(categories, many=True)
-        return Response(serializer.data)
+        categories = Category.objects.filter(is_active=True, parent__isnull=True)
+        return Response(CategorySerializer(categories, many=True).data)
 
 
-class PublicProductListView(APIView):
+# Public: list catalog products (optionally filter by category slug)
+class PublicCatalogProductListView(APIView):
     def get(self, request):
-        category_slug = request.GET.get('category')
-        filters = {"is_active": True, "stock__gt": 0}
+        category_slug = request.GET.get("category")
+
+        qs = CatalogProduct.objects.filter(is_active=True).select_related("category").order_by("-created_at")
 
         if category_slug:
-            category = Category.objects(slug=category_slug).first()
-            if category:
-                filters["category"] = category
+            qs = qs.filter(category__slug=category_slug)
 
-        products = Product.objects(**filters)
-        serializer = ProductSerializer(products, many=True)
-        return Response(serializer.data)
+        return Response(CatalogProductSerializer(qs, many=True).data)
 
 
-class ProductDetailView(APIView):
+# Public: product page with all vendor offers
+class CatalogProductDetailView(APIView):
     def get(self, request, slug):
-        product = Product.objects(slug=slug, is_active=True).first()
+        product = (
+            CatalogProduct.objects
+            .filter(slug=slug, is_active=True)
+            .select_related("category")
+            .prefetch_related("offers__vendor")
+            .first()
+        )
+
         if not product:
-            return Response({"error": "Product not found"}, status=404)
-        serializer = ProductSerializer(product)
-        return Response(serializer.data)
+            return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        return Response(CatalogProductSerializer(product).data)
 
 
-# Vendor Endpoints
-class VendorProductListCreateView(APIView):
+# Vendor: create/update offer for a catalog product
+class VendorOfferListCreateView(APIView):
     permission_classes = [IsAuthenticated]
+
+    def get_vendor(self, request):
+        vendor = getattr(request.user, "vendor", None)
+        return vendor
 
     def get(self, request):
-        vendor = request.user.vendor
-        products = Product.objects(vendor=vendor)
-        serializer = ProductSerializer(products, many=True)
-        return Response(serializer.data)
+        vendor = self.get_vendor(request)
+        if not vendor:
+            return Response({"error": "Vendor profile not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        offers = Offer.objects.filter(vendor=vendor).select_related("catalog_product").order_by("-created_at")
+        return Response(OfferSerializer(offers, many=True).data)
 
     def post(self, request):
-        vendor = request.user.vendor
-        serializer = ProductSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        product = create_product(vendor, serializer.validated_data)
-        return Response(ProductSerializer(product).data)
+        vendor = self.get_vendor(request)
+        if not vendor:
+            return Response({"error": "Vendor profile not found"}, status=status.HTTP_404_NOT_FOUND)
 
+        catalog_product_id = request.data.get("catalog_product")
+        price = request.data.get("price")
+        stock = request.data.get("stock", 0)
 
-class VendorProductDetailView(APIView):
-    permission_classes = [IsAuthenticated]
+        if not catalog_product_id or price is None:
+            return Response({"error": "catalog_product and price are required"}, status=status.HTTP_400_BAD_REQUEST)
 
-    def put(self, request, product_id):
-        vendor = request.user.vendor
-        product = Product.objects(id=product_id, vendor=vendor).first()
-        if not product:
-            return Response({"error": "Not found"}, status=404)
+        catalog_product = CatalogProduct.objects.filter(pk=catalog_product_id, is_active=True).first()
+        if not catalog_product:
+            return Response({"error": "Catalog product not found"}, status=status.HTTP_404_NOT_FOUND)
 
-        serializer = ProductSerializer(product, data=request.data, partial=True)
-        serializer.is_valid(raise_exception=True)
+        offer, created = Offer.objects.update_or_create(
+            vendor=vendor,
+            catalog_product=catalog_product,
+            defaults={"price": price, "stock": stock, "is_active": True},
+        )
 
-        for key, value in serializer.validated_data.items():
-            setattr(product, key, value)
-
-        product.save()
-        return Response(ProductSerializer(product).data)
-
-    def delete(self, request, product_id):
-        vendor = request.user.vendor
-        product = Product.objects(id=product_id, vendor=vendor).first()
-        if not product:
-            return Response({"error": "Not found"}, status=404)
-
-        product.delete()
-        return Response({"message": "Product deleted"})
+        return Response(OfferSerializer(offer).data, status=status.HTTP_201_CREATED if created else status.HTTP_200_OK)

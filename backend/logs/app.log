@@ -216,3 +216,2221 @@ INFO 2026-02-08 23:32:37,943 log "GET /static/rest_framework/js/default.js HTTP/
 INFO 2026-02-08 23:32:37,988 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
 INFO 2026-02-08 23:32:38,046 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
 INFO 2026-02-08 23:32:38,080 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-02-08 23:35:44,243 log "GET /api/products/categories/ HTTP/1.1" 200 5674
+INFO 2026-02-08 23:42:32,971 log "GET /api/products/ HTTP/1.1" 200 5213
+INFO 2026-02-08 23:42:42,636 log "GET /api/products/ HTTP/1.1" 200 5213
+WARNING 2026-02-08 23:42:53,556 log Not Found: /api/vendors/
+WARNING 2026-02-08 23:42:53,559 log "GET /api/vendors/ HTTP/1.1" 404 3829
+WARNING 2026-02-08 23:43:05,775 log Not Found: /api/vendor/
+WARNING 2026-02-08 23:43:05,777 log "GET /api/vendor/ HTTP/1.1" 404 3143
+WARNING 2026-02-08 23:43:13,151 log Not Found: /
+WARNING 2026-02-08 23:43:13,153 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-10 00:14:38,797 autoreload Watching for file changes with StatReloader
+INFO 2026-02-10 00:17:46,332 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-10 00:17:56,784 log Not Found: /
+WARNING 2026-02-10 00:17:56,787 log "GET / HTTP/1.1" 404 3092
+WARNING 2026-02-10 00:17:57,325 log Not Found: /favicon.ico
+WARNING 2026-02-10 00:17:57,326 log "GET /favicon.ico HTTP/1.1" 404 3143
+INFO 2026-02-10 00:18:31,449 log "GET /api/products/ HTTP/1.1" 200 5213
+INFO 2026-02-10 00:18:31,520 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,521 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,528 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,531 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,533 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,535 log "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,537 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,539 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,540 log "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,540 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,541 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-10 00:18:31,559 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2026-02-10 00:20:52,008 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-10 00:20:58,365 log Not Found: /
+WARNING 2026-02-10 00:20:58,365 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-10 00:21:28,315 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-10 00:21:28,334 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:21:28,593 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4077
+INFO 2026-02-10 00:21:29,228 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-10 00:21:29,284 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-10 00:21:29,289 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-10 00:21:29,292 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-10 00:21:29,301 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-10 00:21:29,320 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-10 00:21:29,346 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-10 00:21:42,909 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:21:42,966 log "GET /admin/ HTTP/1.1" 200 5476
+INFO 2026-02-10 00:21:43,040 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-10 00:21:43,040 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-10 00:21:43,046 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-10 00:22:03,944 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11149
+INFO 2026-02-10 00:22:04,027 log "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-10 00:22:04,040 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-10 00:22:04,073 log "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-10 00:22:04,087 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:22:04,088 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-10 00:22:04,091 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-10 00:22:04,102 log "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2026-02-10 00:22:04,146 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-10 00:22:04,154 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-10 00:22:04,159 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-10 00:22:04,160 log "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+INFO 2026-02-10 00:22:04,188 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-10 00:22:04,225 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-10 00:22:04,275 log "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-10 00:22:04,392 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-10 00:22:04,559 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-10 00:22:04,563 log "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+INFO 2026-02-10 00:22:34,603 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11149
+INFO 2026-02-10 00:22:34,654 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:23:13,609 log "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:23:13,656 log "GET /admin/auth/group/1/change/ HTTP/1.1" 200 11879
+INFO 2026-02-10 00:23:13,715 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:23:13,772 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+INFO 2026-02-10 00:23:34,557 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11149
+INFO 2026-02-10 00:23:34,605 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:23:39,176 log "GET /admin/auth/group/ HTTP/1.1" 200 8892
+INFO 2026-02-10 00:23:39,224 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:23:39,239 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-10 00:23:39,275 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-10 00:23:39,290 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-10 00:23:43,066 log "GET /admin/auth/group/1/change/ HTTP/1.1" 200 11651
+INFO 2026-02-10 00:23:43,119 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:24:15,772 log "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:24:15,794 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11383
+INFO 2026-02-10 00:24:15,861 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:24:29,070 log "POST /admin/auth/group/add/ HTTP/1.1" 200 11371
+INFO 2026-02-10 00:24:29,122 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:24:40,326 log "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:24:40,359 log "GET /admin/auth/group/ HTTP/1.1" 200 9348
+INFO 2026-02-10 00:24:40,416 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:24:51,258 log "GET /admin/ HTTP/1.1" 200 6545
+INFO 2026-02-10 00:25:00,156 log "GET /admin/auth/group/1/change/ HTTP/1.1" 200 11651
+INFO 2026-02-10 00:25:00,199 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:25:34,833 log "GET /admin/auth/group/ HTTP/1.1" 200 9153
+INFO 2026-02-10 00:25:34,891 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:25:44,318 log "GET /admin/auth/group/1/change/ HTTP/1.1" 200 11651
+INFO 2026-02-10 00:25:44,371 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:25:52,263 log "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-10 00:25:52,295 log "GET /admin/auth/group/1/change/ HTTP/1.1" 200 11881
+INFO 2026-02-10 00:25:52,343 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:27:32,414 log "GET /api/products/ HTTP/1.1" 200 5271
+INFO 2026-02-10 00:27:34,424 log "OPTIONS /api/products/ HTTP/1.1" 200 5641
+INFO 2026-02-10 00:30:10,369 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:33:29,611 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\admin.py changed, reloading.
+INFO 2026-02-10 00:33:29,637 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\admin.py changed, reloading.
+INFO 2026-02-10 00:33:32,577 autoreload Watching for file changes with StatReloader
+INFO 2026-02-10 00:33:32,579 autoreload Watching for file changes with StatReloader
+INFO 2026-02-10 00:35:34,887 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-10 00:35:40,905 log Not Found: /
+WARNING 2026-02-10 00:35:40,907 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-10 00:35:50,932 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:35:55,094 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:36:03,270 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11715
+INFO 2026-02-10 00:36:03,336 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:36:11,591 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:36:32,796 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:36:35,695 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:36:36,540 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:36:46,576 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11715
+INFO 2026-02-10 00:36:46,632 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 00:36:49,441 log "GET /admin/auth/ HTTP/1.1" 200 5496
+INFO 2026-02-10 00:36:51,737 log "GET /admin/auth/group/add/ HTTP/1.1" 200 11715
+INFO 2026-02-10 00:36:51,785 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-10 00:36:59,645 log Not Found: /
+WARNING 2026-02-10 00:36:59,646 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-10 00:37:05,021 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 00:59:51,895 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-10 00:59:56,116 log Not Found: /
+WARNING 2026-02-10 00:59:56,118 log "GET / HTTP/1.1" 404 3092
+WARNING 2026-02-10 00:59:56,582 log Not Found: /favicon.ico
+WARNING 2026-02-10 00:59:56,583 log "GET /favicon.ico HTTP/1.1" 404 3143
+INFO 2026-02-10 01:00:36,838 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\models.py changed, reloading.
+INFO 2026-02-10 01:00:39,207 autoreload Watching for file changes with StatReloader
+INFO 2026-02-10 01:06:19,473 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-10 01:06:22,681 log Not Found: /
+WARNING 2026-02-10 01:06:22,690 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-10 01:06:40,342 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 01:06:45,013 log "GET /admin/auth/ HTTP/1.1" 200 5496
+INFO 2026-02-10 01:06:47,310 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-10 01:06:52,297 log "GET /admin/password_change/ HTTP/1.1" 200 6949
+INFO 2026-02-10 01:06:56,496 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-11 02:33:34,040 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 02:33:40,238 log Not Found: /
+WARNING 2026-02-11 02:33:40,239 log "GET / HTTP/1.1" 404 3092
+WARNING 2026-02-11 02:33:40,530 log Not Found: /favicon.ico
+WARNING 2026-02-11 02:33:40,531 log "GET /favicon.ico HTTP/1.1" 404 3143
+INFO 2026-02-11 02:36:02,008 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 02:36:06,781 log Not Found: /
+WARNING 2026-02-11 02:36:06,783 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-11 02:36:12,835 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-11 02:36:13,003 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-11 02:36:13,215 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-11 02:36:13,221 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-11 02:36:13,227 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-11 02:36:13,233 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-11 02:36:13,243 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-11 02:36:13,245 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-11 02:36:13,268 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-11 02:36:13,290 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-11 02:36:13,290 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-11 02:42:02,072 log "GET /admin/ HTTP/1.1" 200 6895
+INFO 2026-02-11 02:51:19,758 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\models.py changed, reloading.
+INFO 2026-02-11 02:51:21,870 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:10:06,326 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:12:44,035 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:17:12,669 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:20:09,157 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 03:20:12,247 log Not Found: /
+WARNING 2026-02-11 03:20:12,248 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-11 03:20:30,349 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:20:30,487 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4077
+INFO 2026-02-11 03:20:30,587 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-11 03:20:35,756 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:20:35,778 log "GET /admin/ HTTP/1.1" 200 8229
+INFO 2026-02-11 03:21:59,863 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 12775
+INFO 2026-02-11 03:21:59,929 log "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-11 03:21:59,945 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-11 03:21:59,969 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-11 03:21:59,973 log "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-11 03:21:59,983 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-11 03:21:59,990 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-11 03:22:00,017 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:22:00,028 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-11 03:22:00,034 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-11 03:22:00,035 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-11 03:22:00,077 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-11 03:22:00,117 log "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-11 03:22:00,167 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-11 03:24:57,204 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:24:57,354 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 12970
+INFO 2026-02-11 03:24:57,402 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-11 03:24:57,412 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:24:57,438 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-11 03:24:57,438 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-11 03:24:57,485 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-11 03:24:57,486 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+INFO 2026-02-11 03:24:57,486 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-11 03:24:57,487 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-11 03:25:13,185 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 12775
+INFO 2026-02-11 03:25:13,218 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:25:53,929 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:25:53,965 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 13399
+INFO 2026-02-11 03:25:54,003 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:25:56,883 log "POST /admin/vendors/vendor/2/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:25:56,904 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 13530
+INFO 2026-02-11 03:25:56,971 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:27:11,821 log "GET /admin/products/category/add/ HTTP/1.1" 200 13452
+INFO 2026-02-11 03:27:11,872 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:27:11,941 log "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 689
+INFO 2026-02-11 03:27:28,294 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:27:28,318 log "GET /admin/products/category/ HTTP/1.1" 200 12869
+INFO 2026-02-11 03:27:28,357 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:27:31,205 log "GET /admin/products/product/add/ HTTP/1.1" 200 17653
+INFO 2026-02-11 03:27:31,237 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:28:37,320 log "POST /admin/products/product/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:28:37,345 log "GET /admin/products/product/ HTTP/1.1" 200 13668
+INFO 2026-02-11 03:28:37,387 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2026-02-11 03:29:31,841 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:31,844 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:31,861 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:31,863 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:31,877 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:31,879 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:34,428 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:34,432 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:34,459 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:34,461 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:34,475 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:34,478 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,292 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,297 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,342 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,345 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,360 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,361 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,523 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,526 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,562 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,565 log "GET /api/products/ HTTP/1.1" 500 16912
+ERROR 2026-02-11 03:29:35,578 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:29:35,580 log "GET /api/products/ HTTP/1.1" 500 16912
+INFO 2026-02-11 03:29:46,535 log "GET /admin/products/product/?_facets=True HTTP/1.1" 200 13813
+INFO 2026-02-11 03:29:46,575 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:29:46,638 log "GET /static/admin/img/icon-hidelink.svg HTTP/1.1" 200 1131
+INFO 2026-02-11 03:34:40,949 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 03:34:45,106 log Not Found: /
+WARNING 2026-02-11 03:34:45,107 log "GET / HTTP/1.1" 404 3092
+INFO 2026-02-11 03:34:50,395 log "GET /admin/ HTTP/1.1" 200 10097
+ERROR 2026-02-11 03:35:12,591 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:35:12,594 log "GET /api/products/ HTTP/1.1" 500 92666
+ERROR 2026-02-11 03:35:26,790 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:35:26,792 log "GET /api/products/ HTTP/1.1" 500 17191
+ERROR 2026-02-11 03:35:26,821 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:35:26,825 log "GET /api/products/ HTTP/1.1" 500 17191
+ERROR 2026-02-11 03:35:28,391 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:35:28,394 log "GET /api/products/ HTTP/1.1" 500 17191
+ERROR 2026-02-11 03:35:28,424 log Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py", line 26, in get
+    products = Product.objects(**filters)
+TypeError: 'Manager' object is not callable
+ERROR 2026-02-11 03:35:28,426 log "GET /api/products/ HTTP/1.1" 500 17191
+INFO 2026-02-11 03:38:41,704 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py changed, reloading.
+INFO 2026-02-11 03:38:43,221 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:39:58,384 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\views.py changed, reloading.
+INFO 2026-02-11 03:39:59,982 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:41:24,283 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-11 03:41:25,837 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 03:46:14,595 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 03:46:17,393 log Not Found: /
+WARNING 2026-02-11 03:46:17,394 log "GET / HTTP/1.1" 404 4666
+INFO 2026-02-11 03:46:38,226 log "GET /api/products/ HTTP/1.1" 200 5866
+INFO 2026-02-11 03:46:38,409 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-02-11 03:46:38,416 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-02-11 03:46:38,417 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-02-11 03:46:38,439 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-02-11 03:46:38,462 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-02-11 03:46:38,475 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-02-11 03:46:38,526 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-02-11 03:46:38,527 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-02-11 03:46:38,528 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-02-11 03:46:38,556 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-02-11 03:46:38,563 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-02-11 03:46:38,573 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-02-11 03:47:11,849 log "GET /api/products/ HTTP/1.1" 200 273
+INFO 2026-02-11 03:47:11,859 log "GET /api/products/ HTTP/1.1" 200 273
+INFO 2026-02-11 03:51:42,626 log "GET /admin/ HTTP/1.1" 200 10097
+INFO 2026-02-11 03:51:50,553 log "GET /admin/products/product/add/ HTTP/1.1" 200 17653
+INFO 2026-02-11 03:51:50,592 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:52:06,293 log "GET /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7852
+INFO 2026-02-11 03:52:06,323 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:52:16,905 log "POST /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 328
+INFO 2026-02-11 03:52:16,949 log "GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+INFO 2026-02-11 03:52:23,032 log "POST /admin/products/product/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 03:52:23,087 log "GET /admin/products/product/ HTTP/1.1" 200 14680
+INFO 2026-02-11 03:52:23,144 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 03:52:28,866 log "GET /api/products/ HTTP/1.1" 200 554
+INFO 2026-02-11 03:52:28,893 log "GET /api/products/ HTTP/1.1" 200 554
+INFO 2026-02-11 03:53:21,353 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 12775
+INFO 2026-02-11 03:53:21,392 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:02:51,049 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\models.py changed, reloading.
+INFO 2026-02-11 04:02:52,730 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 04:12:23,433 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 04:13:27,700 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\services.py changed, reloading.
+INFO 2026-02-11 04:13:29,253 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 04:15:47,398 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\services.py changed, reloading.
+INFO 2026-02-11 04:15:48,526 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 04:17:46,637 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\models.py changed, reloading.
+INFO 2026-02-11 04:17:48,162 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 04:36:55,418 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 04:36:58,212 log Not Found: /
+WARNING 2026-02-11 04:36:58,213 log "GET / HTTP/1.1" 404 4250
+INFO 2026-02-11 04:37:25,895 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:37:25,955 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4077
+INFO 2026-02-11 04:37:30,102 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:37:42,631 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:37:49,414 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:38:11,540 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:39:49,791 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 04:39:52,250 log Not Found: /
+WARNING 2026-02-11 04:39:52,252 log "GET / HTTP/1.1" 404 4250
+INFO 2026-02-11 04:39:57,245 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:39:57,284 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4077
+INFO 2026-02-11 04:40:01,150 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:40:12,218 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-02-11 04:40:28,517 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4257
+INFO 2026-02-11 04:40:39,506 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:40:39,532 log "GET /admin/ HTTP/1.1" 200 8880
+INFO 2026-02-11 04:40:50,822 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14685
+INFO 2026-02-11 04:40:50,863 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:40:58,293 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15172
+INFO 2026-02-11 04:40:58,332 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:41:20,633 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15172
+INFO 2026-02-11 04:41:20,676 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:41:23,532 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14685
+INFO 2026-02-11 04:41:23,564 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:41:37,366 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 13298
+INFO 2026-02-11 04:41:37,399 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:42:22,379 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:42:22,419 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 13434
+INFO 2026-02-11 04:42:22,459 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:42:26,046 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 13298
+INFO 2026-02-11 04:42:26,080 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:42:50,855 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:42:50,876 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 13991
+INFO 2026-02-11 04:42:50,921 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:42:57,554 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14685
+INFO 2026-02-11 04:42:57,613 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:44:12,373 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 13298
+INFO 2026-02-11 04:44:12,409 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:44:57,483 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:44:57,503 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 14571
+INFO 2026-02-11 04:44:57,546 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:45:16,706 log "GET /admin/products/category/add/ HTTP/1.1" 200 13917
+INFO 2026-02-11 04:45:16,737 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:45:29,502 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:45:29,522 log "GET /admin/products/category/ HTTP/1.1" 200 13356
+INFO 2026-02-11 04:45:29,562 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:45:48,029 log "GET /admin/products/category/add/ HTTP/1.1" 200 13959
+INFO 2026-02-11 04:45:48,061 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:45:54,880 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:45:54,900 log "GET /admin/products/category/ HTTP/1.1" 200 13842
+INFO 2026-02-11 04:45:54,937 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:07,367 log "GET /admin/products/category/add/ HTTP/1.1" 200 13997
+INFO 2026-02-11 04:46:07,414 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:13,097 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:46:13,127 log "GET /admin/products/category/ HTTP/1.1" 200 14362
+INFO 2026-02-11 04:46:13,171 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:30,948 log "GET /admin/products/category/add/ HTTP/1.1" 200 14043
+INFO 2026-02-11 04:46:30,988 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:40,070 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:46:40,092 log "GET /admin/products/category/ HTTP/1.1" 200 14848
+INFO 2026-02-11 04:46:40,136 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:43,753 log "GET /admin/products/category/4/change/ HTTP/1.1" 200 14333
+INFO 2026-02-11 04:46:43,787 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:46:48,854 log "GET /admin/products/category/add/ HTTP/1.1" 200 14080
+INFO 2026-02-11 04:46:48,887 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:47:08,408 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:47:08,436 log "GET /admin/products/category/ HTTP/1.1" 200 15347
+INFO 2026-02-11 04:47:08,482 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:47:21,547 log "GET /admin/products/category/add/ HTTP/1.1" 200 14118
+INFO 2026-02-11 04:47:21,583 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:47:30,146 log "POST /admin/products/category/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:47:30,171 log "GET /admin/products/category/ HTTP/1.1" 200 15845
+INFO 2026-02-11 04:47:30,210 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:47:44,288 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14925
+INFO 2026-02-11 04:47:44,321 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:48:13,710 log "POST /admin/products/catalogproduct/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:48:13,739 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 14105
+INFO 2026-02-11 04:48:13,782 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:48:25,893 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14925
+INFO 2026-02-11 04:48:25,931 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:48:35,032 log "POST /admin/products/catalogproduct/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:48:35,057 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15018
+INFO 2026-02-11 04:48:35,101 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:48:47,919 log "GET /admin/products/catalogproduct/2/change/ HTTP/1.1" 200 15739
+INFO 2026-02-11 04:48:47,954 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:49:08,117 log "POST /admin/products/catalogproduct/2/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:49:08,137 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 15205
+INFO 2026-02-11 04:49:08,181 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:49:32,591 log "POST /admin/products/catalogproduct/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:49:32,616 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15216
+INFO 2026-02-11 04:49:32,658 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:49:48,137 log "GET /admin/products/catalogproduct/add/ HTTP/1.1" 200 14925
+INFO 2026-02-11 04:49:48,177 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:50:03,955 log "POST /admin/products/catalogproduct/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:50:03,979 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15741
+INFO 2026-02-11 04:50:04,031 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:50:05,946 log "GET /admin/products/catalogproduct/3/change/ HTTP/1.1" 200 15247
+INFO 2026-02-11 04:50:05,979 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:50:41,055 log "POST /admin/products/catalogproduct/3/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:50:41,075 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15747
+INFO 2026-02-11 04:50:41,111 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:50:50,898 log "GET /admin/products/catalogproduct/2/change/ HTTP/1.1" 200 15293
+INFO 2026-02-11 04:50:50,940 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:50:54,697 log "POST /admin/products/catalogproduct/2/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:50:54,721 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15751
+INFO 2026-02-11 04:50:54,760 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:51:03,104 log "GET /admin/products/catalogproduct/1/change/ HTTP/1.1" 200 15292
+INFO 2026-02-11 04:51:03,142 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:51:11,004 log "POST /admin/products/catalogproduct/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:51:11,037 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15756
+INFO 2026-02-11 04:51:11,082 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:51:23,660 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15591
+INFO 2026-02-11 04:51:23,701 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:51:56,716 log "POST /admin/products/offer/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:51:56,739 log "GET /admin/products/offer/ HTTP/1.1" 200 14105
+INFO 2026-02-11 04:51:56,785 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:51:59,612 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15591
+INFO 2026-02-11 04:51:59,647 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:52:18,427 log "POST /admin/products/offer/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:52:18,456 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15854
+INFO 2026-02-11 04:52:18,492 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:52:29,645 log "POST /admin/products/offer/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:52:29,667 log "GET /admin/products/offer/add/ HTTP/1.1" 200 15862
+INFO 2026-02-11 04:52:29,703 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:52:35,429 log "POST /admin/products/offer/add/ HTTP/1.1" 200 16039
+INFO 2026-02-11 04:52:35,466 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:52:38,125 log "POST /admin/products/offer/add/ HTTP/1.1" 200 16039
+INFO 2026-02-11 04:52:38,157 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:53:03,408 log "POST /admin/products/offer/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 04:53:03,431 log "GET /admin/products/offer/ HTTP/1.1" 200 15968
+INFO 2026-02-11 04:53:03,472 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 04:53:22,781 log "GET /api/products/ HTTP/1.1" 200 8432
+INFO 2026-02-11 04:53:41,534 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 04:53:41,559 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 04:55:12,509 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15514
+INFO 2026-02-11 04:55:12,551 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 05:19:54,476 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-11 05:19:56,157 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 05:19:58,537 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-11 05:19:59,523 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 16:55:12,169 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 17:01:10,153 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-11 17:01:13,540 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 17:02:24,724 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-11 17:02:28,303 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 17:04:16,950 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\models.py changed, reloading.
+INFO 2026-02-11 17:04:20,793 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 17:05:04,131 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 17:27:13,286 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 17:27:16,956 log Not Found: /
+WARNING 2026-02-11 17:27:16,957 log "GET / HTTP/1.1" 404 4101
+WARNING 2026-02-11 17:27:17,284 log Not Found: /favicon.ico
+WARNING 2026-02-11 17:27:17,285 log "GET /favicon.ico HTTP/1.1" 404 4152
+INFO 2026-02-11 17:27:23,537 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 17:27:23,559 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 18:03:52,869 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 18:03:57,181 log Not Found: /
+WARNING 2026-02-11 18:03:57,182 log "GET / HTTP/1.1" 404 4101
+INFO 2026-02-11 18:04:01,303 log "GET /admin/ HTTP/1.1" 200 12725
+INFO 2026-02-11 18:04:01,330 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,331 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,331 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,368 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,373 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,373 log "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,378 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,394 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:04:01,394 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:06:29,472 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-11 18:06:31,001 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:07:03,930 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\views.py changed, reloading.
+INFO 2026-02-11 18:07:05,394 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:08:16,112 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\urls.py changed, reloading.
+INFO 2026-02-11 18:08:17,603 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:09:38,816 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\urls.py changed, reloading.
+INFO 2026-02-11 18:09:40,393 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:31:38,733 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 18:32:05,534 log Not Found: /
+WARNING 2026-02-11 18:32:05,535 log "GET / HTTP/1.1" 404 4251
+INFO 2026-02-11 18:32:32,590 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 18:32:32,615 log "GET /api/products/ HTTP/1.1" 200 1343
+WARNING 2026-02-11 18:35:00,402 log Not Found: /accounts/login/
+WARNING 2026-02-11 18:35:00,404 log "GET /accounts/login/ HTTP/1.1" 404 4314
+WARNING 2026-02-11 18:35:35,055 log Not Found: /accounts/register/
+WARNING 2026-02-11 18:35:35,056 log "GET /accounts/register/ HTTP/1.1" 404 4323
+WARNING 2026-02-11 18:36:38,643 log Method Not Allowed: /api/accounts/register/
+WARNING 2026-02-11 18:36:38,644 log "GET /api/accounts/register/ HTTP/1.1" 405 5661
+INFO 2026-02-11 18:36:38,691 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,693 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,698 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,699 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,700 log "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,704 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,706 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,708 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,709 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,709 log "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,710 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:36:38,720 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2026-02-11 18:37:34,421 log "POST /api/accounts/register/ HTTP/1.1" 201 6465
+WARNING 2026-02-11 18:37:54,690 log Method Not Allowed: /api/accounts/login/
+WARNING 2026-02-11 18:37:54,691 log "GET /api/accounts/login/ HTTP/1.1" 405 5634
+INFO 2026-02-11 18:38:11,079 log "POST /api/accounts/login/ HTTP/1.1" 200 6433
+INFO 2026-02-11 18:42:53,353 log "GET /admin/ HTTP/1.1" 200 12725
+INFO 2026-02-11 18:43:01,909 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 14168
+INFO 2026-02-11 18:43:01,955 log "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,964 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,967 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,968 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,973 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,976 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,979 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,981 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,983 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,983 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,986 log "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:01,994 log "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:02,065 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:43:13,153 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 15514
+INFO 2026-02-11 18:43:13,216 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:13,216 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:13,217 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:13,222 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:43:13,233 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:13,249 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:13,249 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:43:14,923 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 14335
+INFO 2026-02-11 18:43:14,977 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:44:12,539 log "GET /admin/ HTTP/1.1" 200 12725
+INFO 2026-02-11 18:44:14,053 log "GET /admin/ HTTP/1.1" 200 12725
+INFO 2026-02-11 18:45:55,918 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\admin.py changed, reloading.
+INFO 2026-02-11 18:45:57,577 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:46:41,079 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\admin.py changed, reloading.
+INFO 2026-02-11 18:46:42,774 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:47:50,547 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\admin.py changed, reloading.
+INFO 2026-02-11 18:47:52,481 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 18:48:06,601 log "GET /admin/ HTTP/1.1" 200 13778
+INFO 2026-02-11 18:50:16,169 log "GET /admin/accounts/user/add/ HTTP/1.1" 200 14921
+INFO 2026-02-11 18:50:16,234 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:50:16,374 log "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-02-11 18:51:18,155 log "POST /admin/accounts/user/add/ HTTP/1.1" 200 15196
+INFO 2026-02-11 18:51:18,214 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:51:50,545 log "POST /admin/accounts/user/add/ HTTP/1.1" 200 15302
+INFO 2026-02-11 18:51:50,594 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:52:11,014 log "POST /admin/accounts/user/add/ HTTP/1.1" 200 15195
+INFO 2026-02-11 18:52:11,066 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:52:43,869 log "POST /admin/accounts/user/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 18:52:44,142 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16834
+INFO 2026-02-11 18:52:44,204 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:52:44,249 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:53:18,200 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 17136
+INFO 2026-02-11 18:53:18,270 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:53:48,439 log "POST /admin/vendors/vendor/add/ HTTP/1.1" 302 0
+INFO 2026-02-11 18:53:48,618 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16734
+INFO 2026-02-11 18:53:48,688 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:53:53,548 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17579
+INFO 2026-02-11 18:53:53,596 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:02,811 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16511
+INFO 2026-02-11 18:54:02,867 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:16,326 log "GET /admin/vendors/vendor/1/change/ HTTP/1.1" 200 17552
+INFO 2026-02-11 18:54:16,376 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:21,815 log "POST /admin/vendors/vendor/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 18:54:21,846 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16742
+INFO 2026-02-11 18:54:21,906 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:27,411 log "GET /admin/vendors/vendor/1/change/ HTTP/1.1" 200 17552
+INFO 2026-02-11 18:54:27,463 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:32,795 log "POST /admin/vendors/vendor/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 18:54:32,826 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16743
+INFO 2026-02-11 18:54:32,879 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:54:58,156 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 18:54:58,177 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-11 18:59:24,712 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16396
+INFO 2026-02-11 18:59:24,777 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:59:29,312 log "GET /admin/products/catalogproduct/4/change/ HTTP/1.1" 200 16135
+INFO 2026-02-11 18:59:29,366 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:59:29,381 log "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2026-02-11 18:59:36,109 log "POST /admin/products/catalogproduct/4/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 18:59:36,138 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16625
+INFO 2026-02-11 18:59:36,199 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 18:59:36,293 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-02-11 19:23:29,066 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 19:25:19,524 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-11 19:25:21,306 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 19:31:08,378 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-11 19:31:10,071 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 19:31:12,717 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-11 19:31:14,134 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 19:31:29,258 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\urls.py changed, reloading.
+INFO 2026-02-11 19:31:30,843 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 19:32:03,856 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\urls.py changed, reloading.
+INFO 2026-02-11 19:32:05,260 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 22:49:21,401 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-11 22:49:22,484 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 22:49:24,306 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\views.py changed, reloading.
+INFO 2026-02-11 22:49:25,321 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 22:50:42,517 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-11 22:50:43,528 autoreload Watching for file changes with StatReloader
+INFO 2026-02-11 22:52:22,578 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-11 22:52:28,597 log Not Found: /
+WARNING 2026-02-11 22:52:28,602 log "GET / HTTP/1.1" 404 4405
+INFO 2026-02-11 22:52:42,087 log "GET /api/products/ HTTP/1.1" 200 1020
+INFO 2026-02-11 22:52:42,101 log "GET /api/products/ HTTP/1.1" 200 1020
+INFO 2026-02-11 22:52:44,371 log "GET /api/products/ HTTP/1.1" 200 1020
+INFO 2026-02-11 22:52:44,384 log "GET /api/products/ HTTP/1.1" 200 1020
+WARNING 2026-02-11 22:53:04,744 log Method Not Allowed: /api/accounts/login/
+WARNING 2026-02-11 22:53:04,745 log "GET /api/accounts/login/ HTTP/1.1" 405 5576
+WARNING 2026-02-11 22:55:04,977 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-11 22:55:04,977 log "POST /api/accounts/login/ HTTP/1.1" 401 5545
+INFO 2026-02-11 22:55:26,902 log "POST /api/accounts/login/ HTTP/1.1" 200 6375
+INFO 2026-02-11 22:56:47,859 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 5841
+INFO 2026-02-11 22:56:49,085 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 5841
+INFO 2026-02-11 22:56:50,748 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 5841
+INFO 2026-02-11 22:56:57,160 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 5841
+WARNING 2026-02-11 22:57:22,978 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:22,978 log "GET /api/orders/cart/ HTTP/1.1" 401 5051
+WARNING 2026-02-11 22:57:29,042 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:29,042 log "GET /api/orders/cart/?format=json HTTP/1.1" 401 58
+WARNING 2026-02-11 22:57:31,779 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:31,780 log "GET /api/orders/cart/ HTTP/1.1" 401 5051
+WARNING 2026-02-11 22:57:45,755 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:45,756 log "GET /api/orders/cart/?format=api HTTP/1.1" 401 5084
+WARNING 2026-02-11 22:57:48,517 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:48,517 log "GET /api/orders/cart/?format=json HTTP/1.1" 401 58
+WARNING 2026-02-11 22:57:51,415 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:57:51,415 log "GET /api/orders/cart/?format=api HTTP/1.1" 401 5084
+WARNING 2026-02-11 22:59:21,045 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 22:59:21,046 log "GET /api/orders/cart/ HTTP/1.1" 401 5051
+WARNING 2026-02-11 23:16:40,336 log Not Found: /api/accounts/login/\n
+WARNING 2026-02-11 23:16:40,337 log "POST /api/accounts/login/%0A HTTP/1.1" 404 4868
+WARNING 2026-02-11 23:21:44,666 log Not Found: /api/accounts/login/\n
+WARNING 2026-02-11 23:21:44,667 log "POST /api/accounts/login/%0A HTTP/1.1" 404 4868
+WARNING 2026-02-11 23:26:34,043 log Method Not Allowed: /api/accounts/login/
+WARNING 2026-02-11 23:26:34,043 log "GET /api/accounts/login/ HTTP/1.1" 405 40
+WARNING 2026-02-11 23:26:45,677 log Method Not Allowed: /api/accounts/login/
+WARNING 2026-02-11 23:26:45,678 log "GET /api/accounts/login/ HTTP/1.1" 405 40
+WARNING 2026-02-11 23:26:48,422 log Method Not Allowed: /api/accounts/login/
+WARNING 2026-02-11 23:26:48,422 log "GET /api/accounts/login/ HTTP/1.1" 405 40
+WARNING 2026-02-11 23:26:55,155 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-11 23:26:55,155 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-11 23:27:39,105 log Not Found: /api/accounts/login/\n
+WARNING 2026-02-11 23:27:39,105 log "POST /api/accounts/login/%0A HTTP/1.1" 404 4868
+INFO 2026-02-11 23:29:20,005 log "POST /api/accounts/login/ HTTP/1.1" 200 638
+INFO 2026-02-11 23:31:42,406 log "POST /api/accounts/login/ HTTP/1.1" 200 638
+WARNING 2026-02-11 23:32:08,636 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 23:32:08,637 log "POST /api/orders/cart/ HTTP/1.1" 401 107
+WARNING 2026-02-11 23:33:42,398 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 23:33:42,398 log "POST /api/orders/cart/ HTTP/1.1" 401 107
+INFO 2026-02-11 23:34:50,439 log "POST /api/accounts/login/ HTTP/1.1" 200 638
+WARNING 2026-02-11 23:35:19,672 log Not Found: /api/orders/cart/
+WARNING 2026-02-11 23:35:19,672 log "POST /api/orders/cart/ HTTP/1.1" 404 31
+INFO 2026-02-11 23:38:24,348 log "GET /admin/products/offer/ HTTP/1.1" 200 16707
+INFO 2026-02-11 23:38:24,414 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:39:02,097 log "GET /admin/products/offer/ HTTP/1.1" 200 16707
+INFO 2026-02-11 23:39:02,139 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:39:11,337 log "GET /admin/products/offer/4/change/ HTTP/1.1" 200 16870
+INFO 2026-02-11 23:39:11,372 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:39:37,666 log "GET /admin/products/offer/ HTTP/1.1" 200 16707
+INFO 2026-02-11 23:40:55,954 log "GET /admin/products/offer/4/change/ HTTP/1.1" 200 16870
+INFO 2026-02-11 23:40:56,003 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-11 23:42:21,059 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 23:42:21,060 log "POST /api/orders/cart/ HTTP/1.1" 401 172
+INFO 2026-02-11 23:43:51,030 log "POST /api/accounts/login/ HTTP/1.1" 200 638
+WARNING 2026-02-11 23:44:07,123 log Not Found: /api/orders/cart/
+WARNING 2026-02-11 23:44:07,124 log "POST /api/orders/cart/ HTTP/1.1" 404 31
+INFO 2026-02-11 23:47:45,783 log "POST /admin/products/offer/4/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:47:45,811 log "GET /admin/products/offer/ HTTP/1.1" 200 16939
+INFO 2026-02-11 23:47:45,865 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-11 23:48:02,151 log Not Found: /api/orders/cart/
+WARNING 2026-02-11 23:48:02,151 log "POST /api/orders/cart/ HTTP/1.1" 404 31
+INFO 2026-02-11 23:49:12,207 log "GET /admin/products/offer/4/change/ HTTP/1.1" 200 16870
+INFO 2026-02-11 23:49:12,247 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:49:17,045 log "POST /admin/products/offer/4/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:49:17,074 log "GET /admin/products/offer/ HTTP/1.1" 200 16940
+INFO 2026-02-11 23:49:17,121 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:05,546 log "GET /admin/products/offer/ HTTP/1.1" 200 16708
+INFO 2026-02-11 23:50:05,584 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:34,970 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16513
+INFO 2026-02-11 23:50:35,011 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:41,319 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17579
+INFO 2026-02-11 23:50:41,351 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:47,340 log "POST /admin/vendors/vendor/3/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:50:47,372 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16752
+INFO 2026-02-11 23:50:47,416 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:52,236 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 17549
+INFO 2026-02-11 23:50:52,269 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:56,199 log "POST /admin/vendors/vendor/2/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:50:56,219 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16745
+INFO 2026-02-11 23:50:56,253 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:50:58,649 log "GET /admin/vendors/vendor/1/change/ HTTP/1.1" 200 17552
+INFO 2026-02-11 23:50:58,681 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:51:05,557 log "POST /admin/vendors/vendor/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:51:05,591 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16744
+INFO 2026-02-11 23:51:05,647 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:51:08,692 log "GET /admin/vendors/vendor/4/change/ HTTP/1.1" 200 17516
+INFO 2026-02-11 23:51:08,730 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:51:12,609 log "POST /admin/vendors/vendor/4/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:51:12,631 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16740
+INFO 2026-02-11 23:51:12,668 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:51:34,614 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17579
+INFO 2026-02-11 23:51:34,653 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:51:55,676 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16396
+INFO 2026-02-11 23:51:55,709 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:52:00,483 log "GET /admin/products/catalogproduct/4/change/ HTTP/1.1" 200 16127
+INFO 2026-02-11 23:52:00,511 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:52:03,667 log "POST /admin/products/catalogproduct/4/change/ HTTP/1.1" 302 0
+INFO 2026-02-11 23:52:03,690 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16625
+INFO 2026-02-11 23:52:03,730 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-11 23:52:22,339 log "GET /offers/public/ HTTP/1.1" 200 787
+WARNING 2026-02-11 23:57:13,975 log Unauthorized: /api/orders/cart/
+WARNING 2026-02-11 23:57:13,981 log "POST /api/orders/cart/ HTTP/1.1" 401 107
+INFO 2026-02-11 23:59:15,017 log "POST /api/accounts/login/ HTTP/1.1" 200 638
+INFO 2026-02-11 23:59:15,285 log "POST /api/orders/cart/ HTTP/1.1" 201 44
+INFO 2026-02-11 23:59:32,194 log "GET /api/orders/cart/ HTTP/1.1" 200 160
+INFO 2026-02-12 00:01:12,971 log "POST /api/orders/checkout/ HTTP/1.1" 201 64
+INFO 2026-02-12 00:01:24,526 log "GET /api/orders/cart/ HTTP/1.1" 200 27
+INFO 2026-02-12 00:01:36,528 log "GET /offers/public/ HTTP/1.1" 200 786
+INFO 2026-02-12 00:02:05,651 log "GET /admin/products/offer/ HTTP/1.1" 200 16707
+INFO 2026-02-12 00:02:05,706 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:03:16,042 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-12 00:03:16,059 log "GET /api/products/ HTTP/1.1" 200 1343
+WARNING 2026-02-12 00:05:20,059 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 00:05:20,060 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-12 00:09:45,792 log Unauthorized: /api/orders/admin/orders/
+WARNING 2026-02-12 00:09:45,792 log "GET /api/orders/admin/orders/ HTTP/1.1" 401 107
+INFO 2026-02-12 00:10:27,587 log "POST /api/accounts/login/ HTTP/1.1" 200 629
+INFO 2026-02-12 00:10:33,972 log "GET /api/orders/admin/orders/ HTTP/1.1" 200 113
+INFO 2026-02-12 00:10:58,850 log "GET /api/orders/admin/orders/ HTTP/1.1" 200 113
+INFO 2026-02-12 00:13:11,378 log "PATCH /api/orders/admin/orders/1/update/ HTTP/1.1" 200 56
+INFO 2026-02-12 00:13:19,489 log "GET /api/orders/admin/orders/ HTTP/1.1" 200 120
+INFO 2026-02-12 00:13:46,533 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16515
+INFO 2026-02-12 00:13:46,594 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:13:51,114 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16515
+INFO 2026-02-12 00:13:51,143 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:13:58,278 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16515
+INFO 2026-02-12 00:13:58,313 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:14:01,252 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16396
+INFO 2026-02-12 00:14:01,286 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:14:04,437 log "GET /admin/products/catalogproduct/4/change/ HTTP/1.1" 200 16135
+INFO 2026-02-12 00:14:04,471 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:14:09,544 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16515
+INFO 2026-02-12 00:14:09,575 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:14:17,157 log "GET /admin/vendors/vendor/4/change/ HTTP/1.1" 200 17516
+INFO 2026-02-12 00:14:17,188 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-12 00:15:17,048 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 00:15:17,048 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-12 00:15:17,147 log Unauthorized: /api/orders/vendor/orders/
+WARNING 2026-02-12 00:15:17,148 log "GET /api/orders/vendor/orders/ HTTP/1.1" 401 107
+WARNING 2026-02-12 00:16:24,198 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 00:16:24,199 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-12 00:16:24,259 log Unauthorized: /api/orders/vendor/orders/
+WARNING 2026-02-12 00:16:24,259 log "GET /api/orders/vendor/orders/ HTTP/1.1" 401 107
+WARNING 2026-02-12 00:17:31,333 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 00:17:31,333 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-12 00:17:31,388 log Unauthorized: /api/orders/vendor/orders/
+WARNING 2026-02-12 00:17:31,388 log "GET /api/orders/vendor/orders/ HTTP/1.1" 401 107
+INFO 2026-02-12 00:18:53,764 log "POST /api/accounts/login/ HTTP/1.1" 200 627
+INFO 2026-02-12 00:18:53,826 log "GET /api/orders/vendor/orders/ HTTP/1.1" 200 2
+INFO 2026-02-12 00:21:53,172 log "GET /api/orders/vendor/orders/ HTTP/1.1" 200 2
+INFO 2026-02-12 00:22:48,776 log "GET /admin/products/offer/ HTTP/1.1" 200 16707
+INFO 2026-02-12 00:22:48,831 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:23:07,235 log "GET /admin/products/offer/4/change/ HTTP/1.1" 200 16870
+INFO 2026-02-12 00:23:07,270 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:23:30,829 log "GET /admin/vendors/vendor/3/change/?_to_field=id HTTP/1.1" 200 17628
+INFO 2026-02-12 00:23:30,866 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:26:21,881 log "POST /api/accounts/login/ HTTP/1.1" 200 629
+WARNING 2026-02-12 00:26:21,943 log Forbidden: /api/orders/vendor/orders/
+WARNING 2026-02-12 00:26:21,944 log "GET /api/orders/vendor/orders/ HTTP/1.1" 403 63
+INFO 2026-02-12 00:26:58,683 log "POST /admin/vendors/vendor/3/change/?_to_field=id HTTP/1.1" 302 0
+INFO 2026-02-12 00:26:58,714 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16742
+INFO 2026-02-12 00:26:58,766 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:27:52,580 log "POST /api/accounts/login/ HTTP/1.1" 200 627
+INFO 2026-02-12 00:27:52,639 log "GET /api/orders/vendor/orders/ HTTP/1.1" 200 151
+INFO 2026-02-12 00:28:11,802 log "GET /admin/products/offer/ HTTP/1.1" 200 16695
+INFO 2026-02-12 00:28:11,838 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:28:35,458 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16396
+INFO 2026-02-12 00:28:35,495 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:28:40,970 log "GET /admin/products/catalogproduct/4/change/ HTTP/1.1" 200 16135
+INFO 2026-02-12 00:28:41,009 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:28:48,724 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 16396
+INFO 2026-02-12 00:28:48,760 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 00:28:57,746 log "GET /admin/products/offer/ HTTP/1.1" 200 16695
+INFO 2026-02-12 00:28:57,779 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 02:41:07,532 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-12 02:41:07,553 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-12 02:41:09,356 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-12 02:41:09,380 log "GET /api/products/ HTTP/1.1" 200 1343
+INFO 2026-02-12 02:44:54,698 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\models.py changed, reloading.
+INFO 2026-02-12 02:44:57,546 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 02:46:44,972 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-12 02:46:46,129 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 02:47:42,017 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-12 02:47:42,816 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 02:50:11,287 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\orders\models.py changed, reloading.
+INFO 2026-02-12 02:50:12,044 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:09:27,193 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 03:09:30,551 log Not Found: /
+WARNING 2026-02-12 03:09:30,555 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-12 03:10:19,799 log Not Found: /
+WARNING 2026-02-12 03:10:19,800 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-12 03:10:29,484 log Not Found: /
+WARNING 2026-02-12 03:10:29,485 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-12 03:10:38,381 log Not Found: /api/
+WARNING 2026-02-12 03:10:38,381 log "GET /api/ HTTP/1.1" 404 4435
+INFO 2026-02-12 03:10:55,628 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 03:14:12,295 log Not Found: /
+WARNING 2026-02-12 03:14:12,295 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-12 03:16:07,028 log Not Found: /
+WARNING 2026-02-12 03:16:07,028 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-12 03:16:49,724 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 03:16:49,725 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+WARNING 2026-02-12 03:19:30,006 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 03:19:30,006 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+INFO 2026-02-12 03:20:14,727 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 164
+WARNING 2026-02-12 03:22:22,525 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 03:22:22,525 log "POST /api/accounts/login/ HTTP/1.1" 401 31
+INFO 2026-02-12 03:26:09,424 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-12 03:26:10,248 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:26:11,745 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\views.py changed, reloading.
+INFO 2026-02-12 03:26:12,448 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:27:28,338 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 03:27:29,127 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:27:30,785 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 03:27:31,736 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:29:31,570 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:31:25,969 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\urls.py changed, reloading.
+INFO 2026-02-12 03:31:27,001 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:31:35,037 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\accounts\urls.py changed, reloading.
+INFO 2026-02-12 03:31:36,137 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:32:21,222 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:33:16,648 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 03:33:52,192 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:33:52,192 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+WARNING 2026-02-12 03:38:18,157 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:38:18,158 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 107
+INFO 2026-02-12 03:39:18,730 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+ERROR 2026-02-12 03:40:00,561 log Internal Server Error: /api/payments/mpesa/stk-push/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: payments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py", line 44, in post
+    payment = Payment.objects.create(
+        order=order,
+    ...<5 lines>...
+        phone_number=phone_number,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: payments
+ERROR 2026-02-12 03:40:00,570 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 500 190843
+INFO 2026-02-12 03:40:00,572 basehttp - Broken pipe from ('127.0.0.1', 50283)
+INFO 2026-02-12 03:41:35,178 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 03:41:35,182 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:41:35,182 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+INFO 2026-02-12 03:47:49,297 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 03:49:06,666 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 03:50:03,503 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:50:03,503 log "OPTIONS /api/payments/mpesa/stk-push/ HTTP/1.1" 401 58
+INFO 2026-02-12 03:51:11,616 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 03:51:17,880 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:51:17,880 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+ERROR 2026-02-12 03:51:37,888 log Internal Server Error: /api/payments/mpesa/stk-push/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: payments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py", line 44, in post
+    payment = Payment.objects.create(
+        order=order,
+    ...<5 lines>...
+        phone_number=phone_number,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: payments
+ERROR 2026-02-12 03:51:37,897 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 500 190711
+INFO 2026-02-12 03:51:37,898 basehttp - Broken pipe from ('127.0.0.1', 55950)
+WARNING 2026-02-12 03:51:50,142 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:51:50,142 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+WARNING 2026-02-12 03:52:58,814 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:52:58,814 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+ERROR 2026-02-12 03:55:45,075 log Internal Server Error: /api/payments/mpesa/stk-push/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: payments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py", line 44, in post
+    payment = Payment.objects.create(
+        order=order,
+    ...<5 lines>...
+        phone_number=phone_number,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: payments
+ERROR 2026-02-12 03:55:45,079 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 500 190845
+INFO 2026-02-12 03:55:45,080 basehttp - Broken pipe from ('127.0.0.1', 51820)
+WARNING 2026-02-12 03:58:52,202 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 03:58:52,202 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 172
+INFO 2026-02-12 04:00:17,828 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 04:00:27,601 log Not Found: /api/orders/
+WARNING 2026-02-12 04:00:27,602 log "GET /api/orders/ HTTP/1.1" 404 6958
+INFO 2026-02-12 04:02:23,565 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+INFO 2026-02-12 04:02:34,858 log "OPTIONS /api/payments/mpesa/stk-push/ HTTP/1.1" 200 213
+WARNING 2026-02-12 04:02:53,022 log Not Found: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:02:53,022 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 404 27
+ERROR 2026-02-12 04:03:46,197 log Internal Server Error: /api/payments/mpesa/stk-push/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: payments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py", line 44, in post
+    payment = Payment.objects.create(
+        order=order,
+    ...<5 lines>...
+        phone_number=phone_number,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: payments
+ERROR 2026-02-12 04:03:46,202 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 500 190710
+INFO 2026-02-12 04:03:46,203 basehttp - Broken pipe from ('127.0.0.1', 65532)
+INFO 2026-02-12 04:06:22,613 log "GET /admin/ HTTP/1.1" 200 13765
+INFO 2026-02-12 04:12:32,088 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-12 04:12:33,151 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:14:07,650 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 04:14:14,564 log Not Found: /
+WARNING 2026-02-12 04:14:14,567 log "GET / HTTP/1.1" 404 4405
+INFO 2026-02-12 04:15:40,583 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:16:34,958 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+INFO 2026-02-12 04:16:52,077 log "OPTIONS /api/payments/mpesa/stk-push/ HTTP/1.1" 200 175
+ERROR 2026-02-12 04:17:05,447 log Internal Server Error: /api/payments/mpesa/stk-push/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py", line 48, in post
+    resp = stk_push(phone_number, order.total_amount, str(order.id), callback_url)
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py", line 18, in stk_push
+    token = get_access_token()
+  File "C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py", line 9, in get_access_token
+    consumer_key = settings.MPESA_CONSUMER_KEY
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'MPESA_CONSUMER_KEY'
+ERROR 2026-02-12 04:17:05,451 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 500 102758
+INFO 2026-02-12 04:20:34,429 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-12 04:20:35,414 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:20:36,979 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-12 04:20:37,898 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:21:28,063 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 04:21:50,173 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:21:50,174 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 172
+INFO 2026-02-12 04:23:50,377 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 04:24:01,258 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:24:01,259 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 93
+INFO 2026-02-12 04:31:32,401 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 04:31:32,421 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 04:31:33,581 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:31:33,585 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:32:18,486 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:32:41,345 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:33:04,504 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 04:33:04,615 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:33:04,616 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 91
+INFO 2026-02-12 04:35:39,760 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:36:04,882 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 04:36:04,972 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:36:04,973 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 91
+INFO 2026-02-12 04:38:38,401 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:38:52,651 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 04:38:52,744 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 04:38:52,745 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 91
+INFO 2026-02-12 04:46:12,289 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 04:46:13,372 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:46:22,474 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 04:46:23,522 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:48:07,898 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-12 04:49:15,072 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:54:53,418 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 04:57:01,056 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 04:57:47,655 log Not Found: /api/payments/stk-push/
+WARNING 2026-02-12 04:57:47,656 log "POST /api/payments/stk-push/ HTTP/1.1" 404 4902
+WARNING 2026-02-12 04:58:28,919 log Not Found: /api/payments/stk-push/
+WARNING 2026-02-12 04:58:28,919 log "POST /api/payments/stk-push/ HTTP/1.1" 404 4902
+WARNING 2026-02-12 05:02:55,603 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:02:55,604 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 107
+WARNING 2026-02-12 05:03:47,397 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-12 05:03:47,397 log "POST /api/accounts/login/ HTTP/1.1" 401 32
+INFO 2026-02-12 05:05:19,274 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 05:05:34,462 log Forbidden: /api/orders/vendor/orders/
+WARNING 2026-02-12 05:05:34,463 log "GET /api/orders/vendor/orders/ HTTP/1.1" 403 63
+WARNING 2026-02-12 05:06:26,054 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:06:26,054 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 207
+INFO 2026-02-12 05:08:38,417 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-12 05:08:39,783 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 05:09:12,490 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-12 05:10:02,274 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:10:02,275 log "GET /api/payments/mpesa/stk-push/ HTTP/1.1" 401 3806
+WARNING 2026-02-12 05:13:39,315 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:13:39,315 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 207
+WARNING 2026-02-12 05:13:50,215 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:13:50,216 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 207
+INFO 2026-02-12 05:32:30,325 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 05:33:15,068 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 05:33:47,511 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:33:47,511 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 207
+WARNING 2026-02-12 05:36:39,968 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:36:39,968 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 207
+INFO 2026-02-12 05:39:29,989 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-12 05:39:31,336 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 05:39:54,598 autoreload Watching for file changes with StatReloader
+INFO 2026-02-12 05:41:10,370 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-12 05:42:45,282 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-12 05:42:45,283 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 87
+INFO 2026-02-17 18:28:29,890 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-17 18:28:35,724 log Not Found: /
+WARNING 2026-02-17 18:28:35,725 log "GET / HTTP/1.1" 404 4405
+WARNING 2026-02-17 18:28:36,155 log Not Found: /favicon.ico
+WARNING 2026-02-17 18:28:36,156 log "GET /favicon.ico HTTP/1.1" 404 4456
+WARNING 2026-02-17 18:28:50,831 log Not Found: /
+WARNING 2026-02-17 18:28:50,833 log "GET / HTTP/1.1" 404 4405
+INFO 2026-02-17 18:38:47,980 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-17 18:38:51,276 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 18:40:34,498 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\models.py changed, reloading.
+INFO 2026-02-17 18:40:36,324 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 18:42:56,345 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-17 18:42:58,126 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 18:44:41,097 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 18:44:44,179 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 18:56:36,923 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-17 18:56:43,446 log Not Found: /
+WARNING 2026-02-17 18:56:43,453 log "GET / HTTP/1.1" 404 4405
+INFO 2026-02-17 19:00:51,525 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-17 19:00:57,653 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-17 19:00:57,654 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 107
+WARNING 2026-02-17 19:02:19,465 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-17 19:02:19,466 log "POST /api/accounts/login/ HTTP/1.1" 401 32
+INFO 2026-02-17 19:04:08,254 log "GET /admin HTTP/1.1" 301 0
+WARNING 2026-02-17 19:04:08,273 base Session data corrupted
+INFO 2026-02-17 19:04:08,315 log "GET /admin/ HTTP/1.1" 302 0
+WARNING 2026-02-17 19:04:08,324 base Session data corrupted
+INFO 2026-02-17 19:04:08,534 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4081
+INFO 2026-02-17 19:04:08,816 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-17 19:04:08,817 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-17 19:04:08,839 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-17 19:04:08,843 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-17 19:04:08,844 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-17 19:04:08,866 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-17 19:04:08,887 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-02-17 19:04:11,722 base Session data corrupted
+INFO 2026-02-17 19:04:13,229 log "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+WARNING 2026-02-17 19:04:17,524 base Session data corrupted
+INFO 2026-02-17 19:04:19,177 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-17 19:04:19,248 log "GET /admin/ HTTP/1.1" 200 13769
+INFO 2026-02-17 19:04:19,324 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-17 19:04:19,360 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-17 19:04:19,361 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-17 19:04:24,441 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 19:04:24,519 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-17 19:04:24,542 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-17 19:04:24,579 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-17 19:04:24,598 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:04:24,615 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-17 19:04:24,625 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-17 19:04:24,642 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-17 19:04:24,653 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-17 19:04:24,664 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-17 19:04:24,681 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-17 19:04:24,752 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-17 19:04:24,810 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-17 19:04:24,846 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-02-17 19:04:24,925 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-17 19:04:24,999 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-17 19:04:24,999 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-17 19:04:25,011 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-02-17 19:04:45,048 log "GET /admin/accounts/user/3/change/ HTTP/1.1" 200 16605
+INFO 2026-02-17 19:04:45,114 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:04:45,125 log "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-17 19:04:45,147 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-17 19:04:45,153 log "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-17 19:04:45,178 log "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-17 19:04:55,014 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 19:06:10,381 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16593
+INFO 2026-02-17 19:06:10,449 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:06:13,597 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 19:06:19,749 log "GET /admin/accounts/user/add/ HTTP/1.1" 200 14925
+INFO 2026-02-17 19:06:19,814 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:06:19,835 log "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-02-17 19:07:19,158 log "POST /admin/accounts/user/add/ HTTP/1.1" 200 15196
+INFO 2026-02-17 19:07:19,220 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:07:48,325 log "POST /admin/accounts/user/add/ HTTP/1.1" 200 15194
+INFO 2026-02-17 19:07:48,381 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:08:18,469 log "GET /admin/ HTTP/1.1" 200 13769
+INFO 2026-02-17 19:08:20,968 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16512
+INFO 2026-02-17 19:08:21,039 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:08:26,986 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 19:08:27,046 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:08:30,970 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16593
+INFO 2026-02-17 19:08:31,030 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:08:33,210 log "GET /admin/accounts/user/4/password/ HTTP/1.1" 200 11962
+INFO 2026-02-17 19:09:17,901 log "POST /admin/accounts/user/4/password/ HTTP/1.1" 302 0
+INFO 2026-02-17 19:09:17,945 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16729
+INFO 2026-02-17 19:09:18,028 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:09:18,125 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+INFO 2026-02-17 19:10:43,635 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 19:10:43,691 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:10:48,159 log "GET /admin/accounts/user/5/change/ HTTP/1.1" 200 16588
+INFO 2026-02-17 19:10:48,213 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:10:51,947 log "GET /admin/accounts/user/5/password/ HTTP/1.1" 200 11976
+INFO 2026-02-17 19:11:12,297 log "POST /admin/accounts/user/5/password/ HTTP/1.1" 302 0
+INFO 2026-02-17 19:11:12,332 log "GET /admin/accounts/user/5/change/ HTTP/1.1" 200 16724
+INFO 2026-02-17 19:11:12,394 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 19:13:15,392 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+INFO 2026-02-17 19:19:43,276 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+WARNING 2026-02-17 19:20:02,439 log Bad Request: /api/payments/mpesa/stk-push/
+WARNING 2026-02-17 19:20:02,440 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 400 157
+INFO 2026-02-17 19:27:34,570 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:27:36,119 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:27:38,087 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:27:39,415 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:27:59,816 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:28:01,081 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:28:09,501 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:28:11,015 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:30:12,455 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:30:14,022 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:30:17,835 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 19:30:19,630 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:31:37,865 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:31:52,211 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 19:53:09,500 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:06:34,952 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-17 20:06:34,997 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-17 20:06:35,598 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\settings.py changed, reloading.
+INFO 2026-02-17 20:06:39,379 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:06:39,379 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:06:39,380 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:08:31,968 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:08:31,992 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:08:31,995 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:08:34,032 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:08:34,041 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:08:34,063 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:12:19,143 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:12:20,187 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:12:20,208 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\daraja.py changed, reloading.
+INFO 2026-02-17 20:12:20,774 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:12:22,217 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:12:22,236 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:12:42,126 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-17 20:13:03,443 log Unauthorized: /api/payments/mpesa/stk-push/
+WARNING 2026-02-17 20:13:03,444 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 401 107
+INFO 2026-02-17 20:14:02,458 log "POST /api/accounts/login/ HTTP/1.1" 200 546
+INFO 2026-02-17 20:14:27,508 log "POST /api/payments/mpesa/stk-push/ HTTP/1.1" 200 303
+INFO 2026-02-17 20:16:14,837 log "POST /api/payments/mpesa/callback/ HTTP/1.1" 200 15
+INFO 2026-02-17 20:19:29,187 log "GET /admin/accounts/user/ HTTP/1.1" 200 17700
+INFO 2026-02-17 20:19:29,331 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 20:19:32,113 log "GET /admin/accounts/user/5/change/ HTTP/1.1" 200 16588
+INFO 2026-02-17 20:19:32,170 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-17 20:24:11,990 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-17 20:24:12,065 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-17 20:24:12,085 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-17 20:24:14,034 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:24:14,064 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:24:14,085 autoreload Watching for file changes with StatReloader
+INFO 2026-02-17 20:24:50,020 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 02:53:31,667 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-18 02:53:31,666 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-18 02:53:31,668 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\models.py changed, reloading.
+INFO 2026-02-18 02:53:34,202 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 02:53:34,202 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:29:03,689 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:29:29,478 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-18 03:29:31,032 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:29:40,205 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:31:50,769 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\views.py changed, reloading.
+INFO 2026-02-18 03:31:52,077 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:32:06,258 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\payments\urls.py changed, reloading.
+INFO 2026-02-18 03:32:07,558 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-18 03:32:22,297 log Not Found: /
+WARNING 2026-02-18 03:32:22,298 log "GET / HTTP/1.1" 404 4559
+INFO 2026-02-18 03:33:25,068 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\serializers.py changed, reloading.
+INFO 2026-02-18 03:33:26,341 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:33:38,119 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:33:39,397 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:33:50,228 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 03:33:51,781 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-18 03:34:57,676 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-18 03:34:57,677 log "POST /api/accounts/login/ HTTP/1.1" 401 32
+INFO 2026-02-18 03:35:07,554 log "GET /admin/ HTTP/1.1" 200 13750
+INFO 2026-02-18 03:35:11,950 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16512
+INFO 2026-02-18 03:35:12,003 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:35:59,253 log "GET /admin/vendors/vendor/4/change/ HTTP/1.1" 200 17582
+INFO 2026-02-18 03:35:59,311 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:36:27,220 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 17202
+INFO 2026-02-18 03:36:27,282 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:36:41,785 log "GET /admin/accounts/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7865
+INFO 2026-02-18 03:36:41,834 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:37:23,194 log "POST /admin/accounts/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8148
+INFO 2026-02-18 03:37:23,247 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:37:34,026 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16512
+INFO 2026-02-18 03:37:34,085 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:37:50,270 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17633
+INFO 2026-02-18 03:37:50,323 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:37:57,498 log "GET /admin/accounts/user/4/change/?_to_field=id&_popup=1 HTTP/1.1" 200 9357
+INFO 2026-02-18 03:37:57,563 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:37:59,532 log "GET /admin/accounts/user/4/password/ HTTP/1.1" 200 11962
+INFO 2026-02-18 03:38:10,166 log "POST /admin/accounts/user/4/password/ HTTP/1.1" 302 0
+INFO 2026-02-18 03:38:10,204 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16729
+INFO 2026-02-18 03:38:10,259 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:38:15,892 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17633
+INFO 2026-02-18 03:38:15,955 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:38:27,202 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:38:39,226 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:38:39,228 log "GET /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:39:28,531 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:39:51,964 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:39:51,965 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:41:49,047 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16512
+INFO 2026-02-18 03:41:49,108 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:41:53,449 log "GET /admin/vendors/vendor/3/change/ HTTP/1.1" 200 17633
+INFO 2026-02-18 03:41:53,514 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 03:42:22,480 log "POST /admin/vendors/vendor/3/change/ HTTP/1.1" 302 0
+INFO 2026-02-18 03:42:22,526 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 16746
+INFO 2026-02-18 03:42:22,593 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-18 03:43:29,547 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:43:29,548 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+WARNING 2026-02-18 03:44:26,645 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:44:26,646 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:45:24,937 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 03:45:26,641 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:45:35,714 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:45:37,333 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:45:45,761 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\serializers.py changed, reloading.
+INFO 2026-02-18 03:45:47,329 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:46:30,973 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-18 03:46:32,278 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:46:37,611 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-18 03:46:39,195 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:47:24,324 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-18 03:48:18,706 log Unauthorized: /api/vendor/
+WARNING 2026-02-18 03:48:18,707 log "GET /api/vendor/ HTTP/1.1" 401 5044
+INFO 2026-02-18 03:48:19,327 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-02-18 03:48:19,346 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-02-18 03:48:19,354 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-02-18 03:48:19,367 log "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-02-18 03:48:19,434 log "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-02-18 03:48:19,435 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-02-18 03:48:19,447 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-02-18 03:48:19,449 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-02-18 03:48:19,477 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-02-18 03:48:19,502 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-02-18 03:48:19,537 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-02-18 03:48:19,578 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2026-02-18 03:48:32,629 log Unauthorized: /api/vendor/offers/
+WARNING 2026-02-18 03:48:32,630 log "POST /api/vendor/offers/ HTTP/1.1" 401 107
+INFO 2026-02-18 03:49:15,510 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:49:47,621 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:49:47,622 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:52:34,183 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:52:34,527 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:52:36,122 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:52:36,578 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:53:37,448 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:53:37,453 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:53:39,027 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:53:39,027 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:53:54,315 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 03:53:54,330 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 03:53:55,972 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:53:55,972 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:54:19,852 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:54:48,762 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:54:48,936 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:54:48,937 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:56:18,357 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:56:18,408 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:56:20,361 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:56:20,425 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:56:47,646 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:57:04,366 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:57:04,550 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:57:04,551 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 03:58:15,698 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:58:15,995 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendors\permissions.py changed, reloading.
+INFO 2026-02-18 03:58:18,257 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:58:18,463 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:58:35,493 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:58:35,525 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:58:37,165 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:58:37,196 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:58:40,033 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:58:40,040 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 03:58:41,689 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:58:41,690 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:59:19,297 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 03:59:32,260 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 03:59:32,419 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 03:59:32,420 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 04:02:06,827 log "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 17202
+INFO 2026-02-18 04:02:06,904 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:02:18,361 log "GET /admin/accounts/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7865
+INFO 2026-02-18 04:02:18,419 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:03:40,430 log "POST /admin/accounts/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 347
+INFO 2026-02-18 04:03:40,629 log "GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+INFO 2026-02-18 04:05:21,645 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:06:01,648 log "POST /api/accounts/login/ HTTP/1.1" 200 545
+WARNING 2026-02-18 04:06:19,523 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 04:06:19,525 log "POST /api/vendor/offers/ HTTP/1.1" 404 36
+WARNING 2026-02-18 04:06:39,152 log Unauthorized: /api/vendor/offers/
+WARNING 2026-02-18 04:06:39,153 log "GET /api/vendor/offers/ HTTP/1.1" 401 5285
+INFO 2026-02-18 04:08:29,952 log "GET /admin/products/offer/ HTTP/1.1" 200 16790
+INFO 2026-02-18 04:08:30,026 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:08:53,698 log "GET /admin/products/offer/add/ HTTP/1.1" 200 16599
+INFO 2026-02-18 04:08:53,760 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:09:59,183 log "POST /admin/products/offer/add/ HTTP/1.1" 200 16801
+INFO 2026-02-18 04:09:59,243 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:10:24,265 log "POST /admin/products/offer/add/ HTTP/1.1" 302 0
+INFO 2026-02-18 04:10:24,324 log "GET /admin/products/offer/ HTTP/1.1" 200 17625
+INFO 2026-02-18 04:10:24,385 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:10:28,862 log "GET /admin/products/offer/ HTTP/1.1" 200 17399
+INFO 2026-02-18 04:10:28,920 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:10:32,760 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16923
+INFO 2026-02-18 04:10:32,815 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:11:26,699 log "POST /api/accounts/login/ HTTP/1.1" 200 545
+WARNING 2026-02-18 04:11:43,487 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 04:11:43,488 log "GET /api/vendor/offers/ HTTP/1.1" 404 36
+WARNING 2026-02-18 04:13:26,055 log Unauthorized: /api/accounts/login/
+WARNING 2026-02-18 04:13:26,056 log "POST /api/accounts/login/ HTTP/1.1" 401 32
+WARNING 2026-02-18 04:13:26,227 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 04:13:26,228 log "GET /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 04:14:02,105 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17105
+INFO 2026-02-18 04:14:02,189 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:09,175 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:14:09,236 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:20,307 log "POST /admin/vendors/vendor/5/change/ HTTP/1.1" 302 0
+INFO 2026-02-18 04:14:20,344 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17335
+INFO 2026-02-18 04:14:20,408 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:37,372 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 17673
+INFO 2026-02-18 04:14:37,424 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:41,249 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:14:42,795 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:14:42,846 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:46,075 log "GET /admin/products/offer/ HTTP/1.1" 200 17399
+INFO 2026-02-18 04:14:46,136 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:14:48,387 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16923
+INFO 2026-02-18 04:14:48,445 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:15:39,713 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:15:39,777 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:15:43,672 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:15:43,732 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:15:49,195 log "GET /admin/accounts/user/ HTTP/1.1" 200 18325
+INFO 2026-02-18 04:15:49,254 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:15:53,298 log "GET /admin/accounts/user/6/change/ HTTP/1.1" 200 16593
+INFO 2026-02-18 04:15:53,360 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:03,336 log "POST /admin/accounts/user/6/change/ HTTP/1.1" 302 0
+INFO 2026-02-18 04:16:03,383 log "GET /admin/accounts/user/ HTTP/1.1" 200 18544
+INFO 2026-02-18 04:16:03,456 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:05,878 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:16:05,957 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:15,686 log "GET /admin/products/offer/ HTTP/1.1" 200 17399
+INFO 2026-02-18 04:16:15,752 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:17,903 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16923
+INFO 2026-02-18 04:16:17,961 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:46,428 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:16:46,479 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:49,314 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 17673
+INFO 2026-02-18 04:16:49,373 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:16:58,548 log "GET /admin/vendors/vendor/2/history/ HTTP/1.1" 200 10135
+INFO 2026-02-18 04:17:05,127 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 17673
+INFO 2026-02-18 04:17:07,879 log "GET /admin/accounts/user/2/change/?_to_field=id HTTP/1.1" 200 16672
+INFO 2026-02-18 04:17:07,939 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:17:46,540 log "GET /admin/vendors/vendor/2/change/ HTTP/1.1" 200 17673
+INFO 2026-02-18 04:18:05,240 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:18:05,302 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:18:16,484 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:18:16,554 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:00,139 log "GET /admin/products/offer/ HTTP/1.1" 200 17399
+INFO 2026-02-18 04:19:00,204 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:02,359 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16923
+INFO 2026-02-18 04:19:02,415 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:12,788 log "POST /admin/products/offer/5/change/ HTTP/1.1" 302 0
+INFO 2026-02-18 04:19:12,833 log "GET /admin/products/offer/ HTTP/1.1" 200 17632
+INFO 2026-02-18 04:19:12,900 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:20,701 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:19:20,758 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:22,960 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:19:23,013 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:36,291 log "GET /admin/accounts/user/4/change/?_to_field=id HTTP/1.1" 200 16642
+INFO 2026-02-18 04:19:36,344 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:19:39,524 log "GET /admin/accounts/user/4/password/ HTTP/1.1" 200 11962
+INFO 2026-02-18 04:20:09,476 log "POST /admin/accounts/user/4/password/ HTTP/1.1" 302 0
+INFO 2026-02-18 04:20:09,510 log "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 16729
+INFO 2026-02-18 04:20:09,582 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:20:15,294 log "GET /admin/accounts/user/4/password/ HTTP/1.1" 200 11962
+INFO 2026-02-18 04:20:17,459 log "GET /admin/vendors/vendor/ HTTP/1.1" 200 17106
+INFO 2026-02-18 04:20:17,531 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:20:19,432 log "GET /admin/vendors/vendor/5/change/ HTTP/1.1" 200 17634
+INFO 2026-02-18 04:20:19,489 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:21:05,195 log "GET /admin/products/offer/ HTTP/1.1" 200 17401
+INFO 2026-02-18 04:21:05,251 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:21:08,156 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16932
+INFO 2026-02-18 04:21:08,234 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:22:32,177 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+WARNING 2026-02-18 04:22:45,439 log Not Found: /api/vendor/offers/
+WARNING 2026-02-18 04:22:45,439 log "GET /api/vendor/offers/ HTTP/1.1" 404 36
+INFO 2026-02-18 04:23:01,296 log "GET /admin/products/offer/ HTTP/1.1" 200 17401
+INFO 2026-02-18 04:23:01,354 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:23:04,618 log "GET /admin/products/offer/5/change/ HTTP/1.1" 200 16932
+INFO 2026-02-18 04:23:04,686 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-18 04:26:32,418 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-18 04:26:33,486 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\config\urls.py changed, reloading.
+INFO 2026-02-18 04:26:34,348 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:26:35,276 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:28:05,894 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-18 04:28:06,346 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\products\urls.py changed, reloading.
+INFO 2026-02-18 04:28:07,601 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:28:08,098 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:28:44,072 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 04:29:00,944 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+INFO 2026-02-18 04:29:01,151 log "GET /api/vendor/offers/ HTTP/1.1" 200 386
+INFO 2026-02-18 06:32:52,679 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\serializers.py changed, reloading.
+INFO 2026-02-18 06:32:55,084 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:33:10,698 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 06:33:11,673 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:33:14,327 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 06:33:15,274 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:33:28,519 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 06:33:29,482 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:33:42,903 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+INFO 2026-02-18 06:33:53,862 log "GET /api/vendor/orders/ HTTP/1.1" 200 509
+WARNING 2026-02-18 06:34:31,151 log Not Found: /api/vendor/orders/3/
+WARNING 2026-02-18 06:34:31,152 log "GET /api/vendor/orders/3/ HTTP/1.1" 404 46
+WARNING 2026-02-18 06:34:50,898 log Not Found: /api/vendor/orders/4/
+WARNING 2026-02-18 06:34:50,899 log "GET /api/vendor/orders/4/ HTTP/1.1" 404 46
+INFO 2026-02-18 06:35:57,660 log "GET /api/vendor/orders/ HTTP/1.1" 200 509
+INFO 2026-02-18 06:37:11,112 log "GET /api/vendor/orders/1/ HTTP/1.1" 200 507
+WARNING 2026-02-18 06:39:08,861 log Unauthorized: /api/vendor/
+WARNING 2026-02-18 06:39:08,862 log "GET /api/vendor/ HTTP/1.1" 401 5044
+INFO 2026-02-18 06:42:49,696 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\serializers.py changed, reloading.
+INFO 2026-02-18 06:42:50,878 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:42:52,589 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\serializers.py changed, reloading.
+INFO 2026-02-18 06:42:53,459 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:43:08,824 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 06:43:09,827 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:43:23,112 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 06:43:24,149 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:43:39,524 log "POST /api/accounts/login/ HTTP/1.1" 200 544
+INFO 2026-02-18 06:43:50,027 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 181
+INFO 2026-02-18 06:44:02,043 log "GET /api/vendor/earnings/payouts/ HTTP/1.1" 200 2
+INFO 2026-02-18 06:48:07,614 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\views.py changed, reloading.
+INFO 2026-02-18 06:48:08,655 autoreload Watching for file changes with StatReloader
+INFO 2026-02-18 06:48:29,336 autoreload C:\Users\Admin\Desktop\Smart-Online-Market-Place\backend\vendor_dashboard\urls.py changed, reloading.
+INFO 2026-02-18 06:48:30,291 autoreload Watching for file changes with StatReloader

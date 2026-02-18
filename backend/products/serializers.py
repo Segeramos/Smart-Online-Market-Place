@@ -1,22 +1,34 @@
 from rest_framework import serializers
-from .models import Category, Product
+from .models import Category, CatalogProduct, Offer
 
-class CategorySerializer(serializers.Serializer):
-    id = serializers.CharField(read_only=True)
-    name = serializers.CharField()
-    slug = serializers.CharField()
-    parent = serializers.CharField(allow_null=True, required=False)
-    is_active = serializers.BooleanField()
-    created_at = serializers.DateTimeField()
 
-class ProductSerializer(serializers.Serializer):
-    id = serializers.CharField(read_only=True)
-    name = serializers.CharField()
-    slug = serializers.CharField()
-    description = serializers.CharField(allow_blank=True)
-    price = serializers.FloatField()
-    stock = serializers.FloatField()
-    category = serializers.CharField()
-    vendor = serializers.CharField()
-    is_active = serializers.BooleanField()
-    created_at = serializers.DateTimeField()
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ["id", "name", "slug", "parent", "is_active", "created_at"]
+
+
+class OfferSerializer(serializers.ModelSerializer):
+    vendor = serializers.CharField(source="vendor.store_name", read_only=True)
+
+    class Meta:
+        model = Offer
+        fields = ["id", "vendor", "price", "stock", "is_active", "created_at"]
+
+
+class CatalogProductSerializer(serializers.ModelSerializer):
+    category = serializers.CharField(source="category.name", read_only=True)
+    offers = OfferSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = CatalogProduct
+        fields = [
+            "id",
+            "name",
+            "slug",
+            "description",
+            "category",
+            "is_active",
+            "created_at",
+            "offers",
+        ]
