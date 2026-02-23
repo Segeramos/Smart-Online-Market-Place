@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 
 from .views import (
     VendorOfferViewSet,
+    VendorProductViewSet,  # ✅ ADDED
     VendorOrderListView,
     VendorOrderDetailView,
     VendorEarningsSummaryView,
@@ -16,6 +17,7 @@ from .views import (
 
 router = DefaultRouter()
 router.register(r"offers", VendorOfferViewSet, basename="vendor-offers")
+router.register(r"products", VendorProductViewSet, basename="vendor-products")  # ✅ ADDED
 
 urlpatterns = [
     path("", include(router.urls)),

@@ -2,6 +2,8 @@
 
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # Django admin
@@ -14,13 +16,14 @@ urlpatterns = [
     path("api/orders/", include("orders.urls")),
     path("api/payments/", include("payments.urls")),
     path("api/adminpanel/", include("adminpanel.urls")),
-
-    # ✅ PHASE 6: Vendor Dashboard (keep this ABOVE any generic catch-alls)
     path("api/vendor/", include("vendor_dashboard.urls")),
+    path("api/disputes/", include("disputes.urls")),
 
-    # Public product browsing (homepage / landing)
-    path("", include("products.urls")),
-
-    # If you really have a separate offers app, keep it OUTSIDE api/vendor/
-    path("offers/", include("offers.urls")),
+    # If you actually have an "offers" app with urls.py and it's in INSTALLED_APPS,
+    # keep this. Otherwise remove it to avoid errors.
+    # path("offers/", include("offers.urls")),
 ]
+
+# ✅ Serve uploaded media files in development
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

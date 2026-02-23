@@ -14,3 +14,5 @@ urlpatterns = [
     path('vendor/orders/', VendorOrderListView.as_view(), name='vendor-order-list'),
     path('admin/orders/<str:order_id>/update/', UpdateOrderStatusView.as_view(), name='update-order-status'),
 ]
+
+

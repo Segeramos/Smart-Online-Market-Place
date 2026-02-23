@@ -3,7 +3,7 @@
 from rest_framework import serializers
 from django.db.models import Sum
 
-from products.models import Offer
+from products.models import Offer, CatalogProduct
 from orders.models import Order, OrderItem
 from vendors.models import VendorPayout
 
@@ -32,6 +32,54 @@ class VendorOfferSerializer(serializers.ModelSerializer):
             "is_active",
             "created_at",
             "catalog_product_name",
+            "category_name",
+        ]
+
+    def validate_price(self, value):
+        if value < 0:
+            raise serializers.ValidationError("Price cannot be negative.")
+        return value
+
+    def validate_stock(self, value):
+        if value < 0:
+            raise serializers.ValidationError("Stock cannot be negative.")
+        return value
+
+
+# =========================
+# ✅ Vendor Products Serializer
+# Used by: /api/vendor/products/
+# =========================
+class VendorProductSerializer(serializers.ModelSerializer):
+
+    # READ fields from CatalogProduct
+    name = serializers.CharField(source="catalog_product.name", read_only=True)
+    slug = serializers.SlugField(source="catalog_product.slug", read_only=True)
+    category_name = serializers.CharField(source="catalog_product.category.name", read_only=True)
+
+    # WRITE: vendor selects which catalog product to list
+    catalog_product = serializers.PrimaryKeyRelatedField(
+        queryset=CatalogProduct.objects.filter(is_active=True)
+    )
+
+    class Meta:
+        model = Offer
+        fields = [
+            "id",
+            "catalog_product",
+            "name",
+            "slug",
+            "category_name",
+            "price",
+            "stock",
+            "is_active",
+            "created_at",
+        ]
+        read_only_fields = [
+            "id",
+            "created_at",
+            "name",
+            "slug",
             "category_name",
         ]
 

@@ -7,3 +7,5 @@ urlpatterns = [
     path("initiate/", InitiatePaymentView.as_view(), name="initiate-payment"),
     path("callback/", MpesaCallbackView.as_view(), name="mpesa-callback"),
 ]
+
+

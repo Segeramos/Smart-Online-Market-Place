@@ -187,3 +187,5 @@ class UpdateOrderStatusView(APIView):
         order.save(update_fields=["status"])
 
         return Response({"message": "Order status updated", "status": order.status}, status=200)
+
+

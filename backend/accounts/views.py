@@ -6,6 +6,8 @@ from rest_framework import status
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.tokens import RefreshToken
 
+from .serializers import UserSerializer  # ✅ ADD THIS IMPORT
+
 User = get_user_model()
 
 
@@ -29,18 +31,22 @@ class LoginView(APIView):
         if user is None:
             user = User.objects.filter(email=email).first()
             if not user or not user.check_password(password):
-                return Response({"detail": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+                return Response(
+                    {"detail": "Invalid credentials"},
+                    status=status.HTTP_401_UNAUTHORIZED,
+                )
 
         if hasattr(user, "is_active") and not user.is_active:
-            return Response({"detail": "User account is disabled"}, status=status.HTTP_401_UNAUTHORIZED)
+            return Response(
+                {"detail": "User account is disabled"},
+                status=status.HTTP_401_UNAUTHORIZED,
+            )
 
         refresh = RefreshToken.for_user(user)
+
         return Response(
             {
-                "user": {
-                    "id": user.id,
-                    "email": getattr(user, "email", ""),
-                },
+                "user": UserSerializer(user).data,  # ✅ NOW includes full_name + role
                 "tokens": {
                     "refresh": str(refresh),
                     "access": str(refresh.access_token),

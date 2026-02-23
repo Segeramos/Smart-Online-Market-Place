@@ -1,23 +1,48 @@
 from django.contrib import admin
-from .models import Vendor
+from .models import Vendor, VendorPayout
 
 
 @admin.register(Vendor)
 class VendorAdmin(admin.ModelAdmin):
     list_display = (
-        "store_name",
+        "id",
         "user",
-        "status",          # ✅ NEW
         "is_active",
-        "commission_rate",
+    )
+
+    search_fields = (
+        "user__email",
+        "user__username",
+    )
+
+    list_filter = (
+        "is_active",
+    )
+
+
+@admin.register(VendorPayout)
+class VendorPayoutAdmin(admin.ModelAdmin):
+    list_display = (
+        "id",
+        "vendor",
+        "order",
+        "gross_amount",
+        "commission_amount",
+        "net_amount",
+        "status",
         "created_at",
     )
 
-    search_fields = ("store_name", "user__email")
-
     list_filter = (
-        "status",          # ✅ NEW
-        "is_active",
+        "status",
+        "created_at",
     )
 
-    readonly_fields = ("created_at", "updated_at")
+    search_fields = (
+        "vendor__user__email",
+        "order__id",
+    )
+
+    ordering = (
+        "-created_at",
+    )

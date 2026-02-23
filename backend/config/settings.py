@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "payments",
     "offers",
     "vendor_dashboard",
+    "disputes",
 
 ]
 

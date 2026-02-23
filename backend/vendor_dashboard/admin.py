@@ -1,3 +1,4 @@
 from django.contrib import admin
 
-# Register your models here.
+# Nothing to register here.
+# VendorPayout is registered in vendors/admin.py.
