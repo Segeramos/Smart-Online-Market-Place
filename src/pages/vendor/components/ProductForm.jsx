@@ -18,6 +18,73 @@ function slugify(input) {
     .replace(/(^-|-$)+/g, "");
 }
 
+function pickFirst(...values) {
+  for (const v of values) {
+    if (v !== undefined && v !== null && v !== "") return v;
+  }
+  return "";
+}
+
+function normalizeInitial(initial = {}) {
+  return {
+    name: pickFirst(initial.name, initial.title, initial.product_name),
+    slug: pickFirst(initial.slug, initial.handle),
+    category_id:
+      initial.category_id !== undefined && initial.category_id !== null
+        ? String(initial.category_id)
+        : "",
+    category_label: pickFirst(initial.category_label, initial.category_name),
+    short_description_html: pickFirst(
+      initial.short_description_html,
+      initial.short_html,
+      initial.short_description
+    ),
+    description_html: pickFirst(
+      initial.description_html,
+      initial.long_description_html,
+      initial.long_html,
+      initial.description_html
+    ),
+    description: pickFirst(initial.description, initial.long_description),
+    product_image: null,
+    existing_product_image_url: pickFirst(
+      initial.existing_product_image_url,
+      initial.product_image_url,
+      initial.image_url,
+      initial.image
+    ),
+    gallery_images: [],
+    existing_gallery_urls: Array.isArray(initial.existing_gallery_urls)
+      ? initial.existing_gallery_urls
+      : Array.isArray(initial.gallery)
+      ? initial.gallery
+      : [],
+    existing_image_ids: Array.isArray(initial.existing_image_ids) ? initial.existing_image_ids : [],
+    existing_primary_image_id: initial.existing_primary_image_id ?? null,
+    price:
+      initial.price !== undefined && initial.price !== null && initial.price !== ""
+        ? String(initial.price)
+        : "",
+    special_price:
+      initial.special_price !== undefined && initial.special_price !== null && initial.special_price !== ""
+        ? String(initial.special_price)
+        : "",
+    status: pickFirst(initial.status, "Published"),
+    condition: pickFirst(initial.condition, "New"),
+    warranty_status: pickFirst(initial.warranty_status, "Select"),
+    warranty_period: pickFirst(initial.warranty_period, "No warranty"),
+    manage_inventory: pickFirst(initial.manage_inventory, "No"),
+    in_stock: pickFirst(initial.in_stock, "In Stock"),
+    brand: pickFirst(initial.brand, initial.brand_name, "Select One"),
+    tax_class: pickFirst(initial.tax_class, "Select One"),
+    stockist: pickFirst(initial.stockist, initial.sku, initial.seller_sku),
+    collections: pickFirst(initial.collections),
+    meta_title: pickFirst(initial.meta_title),
+    meta_keywords: pickFirst(initial.meta_keywords),
+    meta_description: pickFirst(initial.meta_description),
+  };
+}
+
 function Icon({ name, className = "h-4 w-4" }) {
   const common = {
     className,
@@ -77,8 +144,8 @@ function TinyEditor({ value, onChange, height = 240 }) {
   return (
     <div className="rounded-md border">
       <Editor
-        apiKey={import.meta.env.VITE_TINYMCE_API_KEY} // ✅ IMPORTANT
-        value={value}
+        apiKey={import.meta.env.VITE_TINYMCE_API_KEY}
+        value={value || ""}
         onEditorChange={(content) => onChange(content)}
         init={{
           height,
@@ -121,42 +188,48 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
   const [err, setErr] = useState("");
   const [saving, setSaving] = useState(false);
 
-  const [form, setForm] = useState(() => ({
-    name: "",
-    slug: "",
-    category_id: "",
-    category_label: "",
-    short_description_html: "",
-    description_html: "",
-    product_image: null, // File
-    // existing_product_image_url: "" (optional for edit)
-    gallery_images: [], // File[]
-    // existing_gallery_urls: [] (optional for edit)
-    price: "",
-    special_price: "",
-    status: "Published",
-    condition: "New",
-    warranty_status: "Select",
-    warranty_period: "No warranty",
-    manage_inventory: "No",
-    in_stock: "In Stock",
-    brand: "Select One",
-    tax_class: "Select One",
-    stockist: "",
-    collections: "",
-    meta_title: "",
-    meta_keywords: "",
-    meta_description: "",
-    ...initial,
-  }));
+  const [form, setForm] = useState(() =>
+    normalizeInitial({
+      name: "",
+      slug: "",
+      category_id: "",
+      category_label: "",
+      short_description_html: "",
+      description_html: "",
+      description: "",
+      product_image: null,
+      existing_product_image_url: "",
+      gallery_images: [],
+      existing_gallery_urls: [],
+      price: "",
+      special_price: "",
+      status: "Published",
+      condition: "New",
+      warranty_status: "Select",
+      warranty_period: "No warranty",
+      manage_inventory: "No",
+      in_stock: "In Stock",
+      brand: "Select One",
+      tax_class: "Select One",
+      stockist: "",
+      collections: "",
+      meta_title: "",
+      meta_keywords: "",
+      meta_description: "",
+      ...initial,
+    })
+  );
 
-  // ✅ keep form updated if initial arrives later (Edit page loads async)
   useEffect(() => {
     if (!initial) return;
-    setForm((prev) => ({ ...prev, ...initial }));
+    setForm((prev) => ({
+      ...prev,
+      ...normalizeInitial(initial),
+      product_image: prev.product_image,
+      gallery_images: prev.gallery_images,
+    }));
   }, [initial]);
 
-  // Category modal
   const [catOpen, setCatOpen] = useState(false);
   const [catQuery, setCatQuery] = useState("");
 
@@ -181,10 +254,20 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
       try {
         const res = await api.get("/api/products/categories/");
         if (!mounted) return;
-        setCategoriesFlat(Array.isArray(res.data) ? res.data : []);
+
+        const raw = res?.data;
+        const list = Array.isArray(raw)
+          ? raw
+          : Array.isArray(raw?.results)
+          ? raw.results
+          : Array.isArray(raw?.data)
+          ? raw.data
+          : [];
+
+        setCategoriesFlat(list);
       } catch (e) {
         if (!mounted) return;
-        setCategoriesErr(e?.message || "Failed to load categories");
+        setCategoriesErr(e?.response?.data?.detail || e?.message || "Failed to load categories");
         setCategoriesFlat([]);
       } finally {
         if (mounted) setCategoriesLoading(false);
@@ -199,28 +282,32 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
 
   const categoryById = useMemo(() => {
     const m = new Map();
-    (categoriesFlat || []).forEach((c) => m.set(c.id, c));
+    (categoriesFlat || []).forEach((c) => m.set(Number(c.id), c));
     return m;
   }, [categoriesFlat]);
 
   function buildCategoryLabel(id) {
     const c = categoryById.get(Number(id));
     if (!c) return "";
-    if (!c.parent) return c.name;
-    const p = categoryById.get(c.parent);
-    return p ? `${p.name} → ${c.name}` : c.name;
+    const parentId = c.parent?.id ?? c.parent ?? null;
+    if (!parentId) return c.name || "";
+    const p = categoryById.get(Number(parentId));
+    return p ? `${p.name} → ${c.name}` : c.name || "";
   }
 
-  // Build a parent->children tree from the flat list (same UI as before)
   const categoryTree = useMemo(() => {
-    const items = categoriesFlat || [];
-    const byId = new Map(items.map((c) => [c.id, { ...c, children: [] }]));
+    const items = (categoriesFlat || []).map((c) => ({
+      ...c,
+      id: Number(c.id),
+      parent: c.parent?.id ?? c.parent ?? null,
+      children: [],
+    }));
+
+    const byId = new Map(items.map((c) => [c.id, c]));
 
     for (const c of items) {
-      const node = byId.get(c.id);
-      const parentId = c.parent;
-      if (parentId && byId.has(parentId)) {
-        byId.get(parentId).children.push(node);
+      if (c.parent && byId.has(Number(c.parent))) {
+        byId.get(Number(c.parent)).children.push(c);
       }
     }
 
@@ -235,21 +322,20 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
     return roots;
   }, [categoriesFlat]);
 
-  // If Edit page sets category_id but not label, build it once categories load
   useEffect(() => {
     if (!form.category_id) return;
     if (form.category_label) return;
     const label = buildCategoryLabel(form.category_id);
-    if (label) setField("category_label", label);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoriesFlat]);
+    if (label) {
+      setForm((prev) => ({ ...prev, category_label: label }));
+    }
+  }, [categoriesFlat, form.category_id, form.category_label]);
 
-  // --- Image previews (with cleanup) ---
   const [productImagePreview, setProductImagePreview] = useState("");
   const [galleryPreviews, setGalleryPreviews] = useState([]);
 
   useEffect(() => {
-    if (!form.product_image) {
+    if (!(form.product_image instanceof File)) {
       setProductImagePreview("");
       return;
     }
@@ -259,11 +345,12 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
   }, [form.product_image]);
 
   useEffect(() => {
-    const files = form.gallery_images || [];
+    const files = Array.isArray(form.gallery_images) ? form.gallery_images.filter((f) => f instanceof File) : [];
     if (!files.length) {
       setGalleryPreviews([]);
       return;
     }
+
     const previews = files.map((f) => ({ name: f.name, url: URL.createObjectURL(f) }));
     setGalleryPreviews(previews);
 
@@ -288,7 +375,7 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
   }, [catQuery, categoryTree]);
 
   function selectCategory(id, label) {
-    setField("category_id", id);
+    setField("category_id", String(id));
     setField("category_label", label);
     setCatOpen(false);
   }
@@ -326,7 +413,7 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
   }
 
   function validate() {
-    if (!form.name.trim()) return "Name is required.";
+    if (!String(form.name || "").trim()) return "Name is required.";
     if (!form.category_id) return "Please select a category.";
 
     const priceN = toNumber(form.price);
@@ -347,17 +434,29 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
 
     setSaving(true);
     try {
-      // Payload stays as object; Create/Edit pages build FormData
-      const payload = { ...form };
+      const payload = {
+        ...form,
+        description:
+          form.description ||
+          String(form.description_html || "")
+            .replace(/<[^>]*>/g, " ")
+            .replace(/\s+/g, " ")
+            .trim(),
+      };
+
       await onSubmit(payload);
     } catch (e2) {
-      setErr(e2?.message || "Failed to save product.");
+      setErr(
+        e2?.response?.data?.detail ||
+          e2?.response?.data?.error ||
+          e2?.message ||
+          "Failed to save product."
+      );
     } finally {
       setSaving(false);
     }
   }
 
-  // SEO preview
   const seoTitle = form.meta_title?.trim() || form.name?.trim() || "Product title";
   const seoDesc =
     form.meta_description?.trim() ||
@@ -455,7 +554,16 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
             <Field label="Description *">
               <TinyEditor
                 value={form.description_html}
-                onChange={(html) => setField("description_html", html)}
+                onChange={(html) => {
+                  setField("description_html", html);
+                  if (!form.description?.trim()) {
+                    const plain = String(html || "")
+                      .replace(/<[^>]*>/g, " ")
+                      .replace(/\s+/g, " ")
+                      .trim();
+                    setField("description", plain);
+                  }
+                }}
                 height={280}
               />
             </Field>
@@ -551,7 +659,7 @@ export default function ProductForm({ mode = "create", initial, onSubmit, onCanc
                   </div>
                 </div>
 
-                <div className="p-3 space-y-3">
+                <div className="space-y-3 p-3">
                   {Array.isArray(form.existing_gallery_urls) && form.existing_gallery_urls.length ? (
                     <div>
                       <div className="mb-2 text-xs font-semibold text-gray-700">Current gallery</div>
