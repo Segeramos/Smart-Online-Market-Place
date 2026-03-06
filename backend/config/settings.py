@@ -1,12 +1,11 @@
 import os
 from pathlib import Path
 from datetime import timedelta
-
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# ✅ Load backend/.env (same directory as manage.py)
+# ✅ Load backend/.env
 load_dotenv(BASE_DIR / ".env")
 
 
@@ -21,7 +20,6 @@ SECRET_KEY = os.getenv(
 
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() in ("true", "1", "yes")
 
-# ✅ Strip spaces so "127.0.0.1, localhost" doesn't break
 ALLOWED_HOSTS = [
     h.strip()
     for h in os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
@@ -41,10 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     # Third-party
     "corsheaders",
     "rest_framework",
     "rest_framework_simplejwt",
+
     # Local apps
     "accounts",
     "vendors",
@@ -56,8 +56,12 @@ INSTALLED_APPS = [
     "offers",
     "vendor_dashboard",
     "disputes",
-
 ]
+
+
+# =============================================================================
+# Middleware
+# =============================================================================
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
@@ -65,7 +69,7 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
 
-    # NOTE: keep CSRF enabled for admin + session auth
+    # keep CSRF enabled
     "django.middleware.csrf.CsrfViewMiddleware",
 
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -73,7 +77,13 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
 ROOT_URLCONF = "config.urls"
+
+
+# =============================================================================
+# Templates
+# =============================================================================
 
 TEMPLATES = [
     {
@@ -116,7 +126,7 @@ if DATABASES["default"]["ENGINE"] != "django.db.backends.sqlite3":
 
 
 # =============================================================================
-# Auth / Password validation
+# Auth
 # =============================================================================
 
 AUTH_USER_MODEL = "accounts.User"
@@ -130,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # =============================================================================
-# i18n / timezone
+# Internationalization
 # =============================================================================
 
 LANGUAGE_CODE = "en-us"
@@ -172,13 +182,16 @@ SIMPLE_JWT = {
 
 
 # =============================================================================
-# CORS (React dev server)
+# CORS (React / Vite dev servers)
 # =============================================================================
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5174",
 ]
+
 CORS_ALLOW_CREDENTIALS = True
 
 
@@ -198,16 +211,16 @@ MPESA_CONSUMER_SECRET = os.getenv("MPESA_CONSUMER_SECRET", "").strip()
 MPESA_SHORTCODE = os.getenv("MPESA_SHORTCODE", "174379").strip()
 MPESA_PASSKEY = os.getenv("MPESA_PASSKEY", "").strip()
 
-# ✅ Important: match your urls.py: path("mpesa/callback/", ...)
-# Full route is: /api/payments/mpesa/callback/
 MPESA_CALLBACK_URL = os.getenv(
     "MPESA_CALLBACK_URL",
     f"{BASE_URL}/api/payments/mpesa/callback/",
 ).strip()
 
-MPESA_STK_CALLBACK_URL = os.getenv("MPESA_STK_CALLBACK_URL", MPESA_CALLBACK_URL).strip()
+MPESA_STK_CALLBACK_URL = os.getenv(
+    "MPESA_STK_CALLBACK_URL",
+    MPESA_CALLBACK_URL,
+).strip()
 
-# ✅ Mock mode for development when Safaricom OAuth is blocked (Imperva)
 MPESA_MOCK = os.getenv("MPESA_MOCK", "False").lower() in ("true", "1", "yes")
 
 if DEBUG:
@@ -227,10 +240,11 @@ if DEBUG:
 
 
 # =============================================================================
-# Cache (optional)
+# Cache
 # =============================================================================
 
 USE_REDIS_CACHE = os.getenv("USE_REDIS_CACHE", "False").lower() in ("true", "1", "yes")
+
 if USE_REDIS_CACHE:
     CACHES = {
         "default": {
