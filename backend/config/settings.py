@@ -186,6 +186,7 @@ SIMPLE_JWT = {
 # =============================================================================
 
 CORS_ALLOWED_ORIGINS = [
+    "https://nairobimart.vercel.app",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:5174",
