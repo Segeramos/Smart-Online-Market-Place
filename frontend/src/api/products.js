@@ -18,8 +18,13 @@ async function getFirstWorking(paths = [], params) {
     } catch (e) {
       const status = e?.response?.status;
 
-      // ✅ DEBUG which endpoint failed (super useful)
-      console.log("[getFirstWorking] failed:", { path, status, params, data: e?.response?.data });
+      // ✅ DEBUG which endpoint failed
+      console.log("[getFirstWorking] failed:", {
+        path,
+        status,
+        params,
+        data: e?.response?.data,
+      });
 
       // Treat these as "try next candidate"
       if (status === 404 || status === 401 || status === 403) {
@@ -56,11 +61,9 @@ function normalizeList(data) {
 export async function getCategories(params = {}) {
   const data = await getFirstWorking(
     [
-      // Most common DRF patterns:
       "/api/categories/",
       "/api/products/categories/",
-      "/api/products/categories", // just in case
-      // Root-mounted patterns:
+      "/api/products/categories",
       "/categories/",
       "/products/categories/",
     ],
@@ -71,14 +74,12 @@ export async function getCategories(params = {}) {
 }
 
 export async function getProducts(params = {}) {
-  // ✅ Return RAW response so Home can log and normalize (and you can debug)
+  // ✅ Return RAW response so Home can log and normalize
   return getFirstWorking(
     [
-      // Most common:
       "/api/products/",
       "/api/products/products/",
       "/api/catalog/products/",
-      // Root-mounted:
       "/products/",
       "/products/products/",
     ],
@@ -94,10 +95,24 @@ export async function getProductsList(params = {}) {
 
 export async function getProductBySlug(slug) {
   return getFirstWorking([
-    "/api/products/" + slug + "/",
-    "/api/products/products/" + slug + "/",
-    "/products/" + slug + "/",
-    "/products/products/" + slug + "/",
+    `/api/products/${slug}/`,
+    `/api/products/products/${slug}/`,
+    `/products/${slug}/`,
+    `/products/products/${slug}/`,
+  ]);
+}
+
+/**
+ * ✅ Added for ProductDetail.jsx
+ * Supports slug first, and if your route passes an id, the same endpoints are tried.
+ */
+export async function getProductDetail(slugOrId) {
+  return getFirstWorking([
+    `/api/products/${slugOrId}/`,
+    `/api/products/products/${slugOrId}/`,
+    `/api/catalog/products/${slugOrId}/`,
+    `/products/${slugOrId}/`,
+    `/products/products/${slugOrId}/`,
   ]);
 }
 
