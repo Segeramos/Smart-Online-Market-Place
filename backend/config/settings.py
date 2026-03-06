@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# ✅ Load backend/.env
+# Load backend/.env
 load_dotenv(BASE_DIR / ".env")
 
 
@@ -22,7 +22,10 @@ DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() in ("true", "1", "yes")
 
 ALLOWED_HOSTS = [
     h.strip()
-    for h in os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+    for h in os.getenv(
+        "DJANGO_ALLOWED_HOSTS",
+        "127.0.0.1,localhost,smart-online-market-place.onrender.com",
+    ).split(",")
     if h.strip()
 ]
 
@@ -153,7 +156,7 @@ USE_TZ = True
 # Static / Media
 # =============================================================================
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = "/media/"
@@ -182,7 +185,7 @@ SIMPLE_JWT = {
 
 
 # =============================================================================
-# CORS (React / Vite dev servers)
+# CORS / CSRF
 # =============================================================================
 
 CORS_ALLOWED_ORIGINS = [
@@ -192,7 +195,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
     "http://127.0.0.1:5174",
 ]
+
 CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://nairobimart.vercel.app",
+]
 
 
 # =============================================================================
@@ -272,7 +280,10 @@ LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
-        "verbose": {"format": "{levelname} {asctime} {module} {message}", "style": "{"}
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{",
+        }
     },
     "handlers": {
         "file": {
@@ -281,7 +292,10 @@ LOGGING = {
             "filename": str(LOG_DIR / "app.log"),
             "formatter": "verbose",
         },
-        "console": {"class": "logging.StreamHandler", "formatter": "verbose"},
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+        },
     },
     "loggers": {
         "django": {
