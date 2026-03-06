@@ -1,0 +1,10 @@
+POST http://127.0.0.1:8000/api/vendors/register/
+Content-Type: application/json
+
+{
+  "user": "vendor@example.com",
+  "store_name": "Tech Gadgets",
+  "description": "Electronics and gadgets store"
+}
+
+GET http://127.0.0.1:8000/api/vendors/all/
