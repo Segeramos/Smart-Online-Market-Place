@@ -6532,3 +6532,342 @@ WARNING 2026-02-24 01:40:17,795 log "GET /api/products/vendor/ HTTP/1.1" 401 58
 WARNING 2026-02-24 01:40:17,799 log Unauthorized: /api/products/vendor/
 WARNING 2026-02-24 01:40:17,800 log "GET /api/products/vendor/ HTTP/1.1" 401 58
 INFO 2026-02-24 01:51:28,069 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-24 01:51:33,401 log Not Found: /
+WARNING 2026-02-24 01:51:33,402 log "GET / HTTP/1.1" 404 3571
+WARNING 2026-02-24 01:51:56,380 log Not Found: /products/
+WARNING 2026-02-24 01:51:56,387 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:51:56,430 log Not Found: /products/
+WARNING 2026-02-24 01:51:56,436 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:51:56,583 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:51:56,621 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:51:56,641 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:51:56,662 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:52:00,824 log Not Found: /products/
+WARNING 2026-02-24 01:52:00,825 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:52:00,846 log Not Found: /products/
+INFO 2026-02-24 01:52:00,851 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:52:00,853 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:52:00,874 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:52:09,550 log "POST /api/accounts/login/ HTTP/1.1" 200 580
+INFO 2026-02-24 01:52:09,653 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:52:09,653 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:52:09,688 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:52:09,688 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:52:14,604 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:52:14,612 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:52:17,750 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:52:17,755 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:52:17,784 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:52:17,792 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:52:19,421 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+INFO 2026-02-24 01:52:19,451 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+WARNING 2026-02-24 01:53:34,522 log Unauthorized: /api/products/vendor/12/
+WARNING 2026-02-24 01:53:34,523 log "GET /api/products/vendor/12/ HTTP/1.1" 401 58
+WARNING 2026-02-24 01:53:34,529 log Unauthorized: /api/products/vendor/12/
+WARNING 2026-02-24 01:53:34,531 log "GET /api/products/vendor/12/ HTTP/1.1" 401 58
+INFO 2026-02-24 01:53:39,817 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+INFO 2026-02-24 01:53:39,839 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+WARNING 2026-02-24 01:53:44,699 log Unauthorized: /api/products/vendor/11/
+WARNING 2026-02-24 01:53:44,700 log "GET /api/products/vendor/11/ HTTP/1.1" 401 58
+WARNING 2026-02-24 01:53:44,708 log Unauthorized: /api/products/vendor/11/
+WARNING 2026-02-24 01:53:44,708 log "GET /api/products/vendor/11/ HTTP/1.1" 401 58
+INFO 2026-02-24 01:53:56,487 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+INFO 2026-02-24 01:53:56,513 log "GET /api/vendor/products/ HTTP/1.1" 200 747
+INFO 2026-02-24 01:54:13,031 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:54:13,075 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:55:53,452 log "POST /api/products/vendor/ HTTP/1.1" 201 14577
+INFO 2026-02-24 01:55:53,644 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+INFO 2026-02-24 01:55:53,663 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+WARNING 2026-02-24 01:56:06,736 log Unauthorized: /api/products/vendor/13/
+WARNING 2026-02-24 01:56:06,738 log "GET /api/products/vendor/13/ HTTP/1.1" 401 58
+WARNING 2026-02-24 01:56:06,744 log Unauthorized: /api/products/vendor/13/
+WARNING 2026-02-24 01:56:06,745 log "GET /api/products/vendor/13/ HTTP/1.1" 401 58
+INFO 2026-02-24 01:56:09,187 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+INFO 2026-02-24 01:56:09,213 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+WARNING 2026-02-24 01:56:38,359 log Not Found: /products/
+WARNING 2026-02-24 01:56:38,360 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:56:38,389 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:38,399 log Not Found: /products/
+WARNING 2026-02-24 01:56:38,404 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:56:38,416 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:38,437 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:38,449 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:46,232 log "POST /api/accounts/login/ HTTP/1.1" 200 590
+WARNING 2026-02-24 01:56:46,331 log Not Found: /products/
+WARNING 2026-02-24 01:56:46,333 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:56:46,363 log Not Found: /products/
+INFO 2026-02-24 01:56:46,364 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:46,370 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:56:46,381 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:46,396 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:46,426 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:51,794 log Not Found: /products/
+WARNING 2026-02-24 01:56:51,795 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:56:51,818 log Not Found: /products/
+INFO 2026-02-24 01:56:51,819 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:51,824 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:56:51,839 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:57,795 log Not Found: /products/
+WARNING 2026-02-24 01:56:57,797 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:56:57,818 log Not Found: /products/
+INFO 2026-02-24 01:56:57,823 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:56:57,823 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:56:57,850 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:57,880 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:56:57,906 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:01,110 log Not Found: /products/
+WARNING 2026-02-24 01:57:01,124 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:57:01,142 log Not Found: /products/
+INFO 2026-02-24 01:57:01,151 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:01,152 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:57:01,174 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:01,193 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:01,218 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:01,649 log Not Found: /products/
+WARNING 2026-02-24 01:57:01,656 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:57:01,682 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:01,685 log Not Found: /products/
+WARNING 2026-02-24 01:57:01,692 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:57:01,703 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:01,725 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:01,752 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:19,349 log Not Found: /products/
+INFO 2026-02-24 01:57:19,363 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 01:57:19,365 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 01:57:19,382 log Not Found: /products/
+WARNING 2026-02-24 01:57:19,387 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 01:57:19,390 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:19,405 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:19,422 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:31,814 log "POST /api/accounts/login/ HTTP/1.1" 200 580
+INFO 2026-02-24 01:57:31,917 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:57:31,921 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:57:31,945 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 01:57:31,949 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 01:57:34,260 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+INFO 2026-02-24 01:57:34,277 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+INFO 2026-02-24 01:57:35,935 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:35,965 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 01:57:46,276 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+INFO 2026-02-24 01:57:46,292 log "GET /api/vendor/products/ HTTP/1.1" 200 1021
+WARNING 2026-02-24 02:04:06,782 log Not Found: /products/
+WARNING 2026-02-24 02:04:06,786 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:04:06,801 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:04:06,814 log Not Found: /products/
+WARNING 2026-02-24 02:04:06,819 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:04:06,822 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:04:06,847 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:04:06,864 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:04:19,400 log "POST /api/accounts/login/ HTTP/1.1" 200 590
+WARNING 2026-02-24 02:04:19,505 log Not Found: /products/
+WARNING 2026-02-24 02:04:19,506 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 02:04:19,527 log Not Found: /products/
+INFO 2026-02-24 02:04:19,532 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:04:19,533 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:04:19,549 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:04:19,570 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:04:19,598 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:08,689 log Not Found: /products/
+WARNING 2026-02-24 02:08:08,714 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:08:08,750 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:08,815 log Not Found: /products/
+WARNING 2026-02-24 02:08:08,830 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:08:08,838 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:08,874 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:08,906 log "OPTIONS /api/products/products/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:08:09,000 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:09,066 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:09,068 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:08:09,114 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:09,126 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:08:15,494 log Not Found: /products/
+WARNING 2026-02-24 02:08:15,506 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 02:08:15,550 log Not Found: /products/
+INFO 2026-02-24 02:08:15,551 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:15,568 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:08:15,628 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:15,654 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:15,685 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:15,785 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:15,800 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:08:15,821 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:15,835 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:08:19,177 log Not Found: /products/
+WARNING 2026-02-24 02:08:19,190 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:08:19,212 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:19,250 log Not Found: /products/
+WARNING 2026-02-24 02:08:19,254 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:08:19,293 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:19,334 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:08:19,369 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:08:19,516 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:19,553 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:08:19,596 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:08:19,598 log "GET /api/products/products/ HTTP/1.1" 404 29
+INFO 2026-02-24 02:10:59,202 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:10:59,234 log Not Found: /products/
+WARNING 2026-02-24 02:10:59,244 log "GET /products/ HTTP/1.1" 404 3616
+WARNING 2026-02-24 02:10:59,271 log Not Found: /products/
+WARNING 2026-02-24 02:10:59,278 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:10:59,279 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:10:59,298 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:10:59,314 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:10:59,373 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:10:59,374 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:10:59,396 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:10:59,397 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:11:02,181 log Not Found: /products/
+WARNING 2026-02-24 02:11:02,194 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:11:02,195 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:11:02,226 log Not Found: /products/
+WARNING 2026-02-24 02:11:02,229 log "GET /products/ HTTP/1.1" 404 3616
+INFO 2026-02-24 02:11:02,258 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:11:02,358 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:11:02,409 log "GET /api/products/categories/ HTTP/1.1" 200 748
+WARNING 2026-02-24 02:11:02,519 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:11:02,525 log "GET /api/products/products/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:11:02,574 log Not Found: /api/products/products/
+WARNING 2026-02-24 02:11:02,579 log "GET /api/products/products/ HTTP/1.1" 404 29
+INFO 2026-02-24 02:13:01,471 log "OPTIONS /api/products/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:13:01,490 log "OPTIONS /api/products/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:13:01,531 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:01,532 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:01,567 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:01,568 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:01,610 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:01,640 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:06,542 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:06,543 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:06,571 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:06,583 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:06,614 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:06,635 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:12,340 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:12,362 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:15,248 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:15,260 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:15,290 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:15,300 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:48,404 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:48,404 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:48,441 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:13:48,441 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:48,481 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:13:48,511 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:15:17,193 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:15:17,447 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:15:17,475 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:15:17,490 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:15:17,558 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:15:17,606 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:20,235 log "OPTIONS /api/products/categories/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:21:20,277 log "OPTIONS /api/products/categories/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:21:20,360 log "OPTIONS /api/products/categories/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:21:20,478 log "OPTIONS /api/products/categories/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:21:20,479 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:20,579 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:21:20,581 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:20,610 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:21:20,669 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:20,705 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:41,716 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:41,752 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:21:41,868 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:21:41,871 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:42,025 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:21:42,182 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:22:30,882 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:22:30,882 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:22:30,911 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:22:30,925 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:23:39,166 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:23:39,166 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:23:39,315 log "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-02-24 02:23:39,315 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:23:39,370 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:23:39,392 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:28:04,088 log "GET /admin/ HTTP/1.1" 200 14394
+INFO 2026-02-24 02:28:09,002 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 21548
+INFO 2026-02-24 02:28:09,061 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:28:26,922 log "GET /admin/products/catalogproduct/12/change/ HTTP/1.1" 200 44402
+INFO 2026-02-24 02:28:26,974 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:29:01,223 log "POST /admin/products/catalogproduct/12/change/ HTTP/1.1" 200 44655
+INFO 2026-02-24 02:29:01,273 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:29:14,567 log "POST /admin/products/catalogproduct/12/change/ HTTP/1.1" 200 44653
+INFO 2026-02-24 02:29:14,616 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:29:21,644 log "POST /admin/products/catalogproduct/12/change/ HTTP/1.1" 302 0
+INFO 2026-02-24 02:29:21,682 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 21812
+INFO 2026-02-24 02:29:21,741 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:29:28,397 log "GET /admin/products/catalogproduct/4/change/ HTTP/1.1" 200 26790
+INFO 2026-02-24 02:29:28,442 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:29:34,141 log "GET /admin/products/catalogproduct/ HTTP/1.1" 200 21545
+INFO 2026-02-24 02:29:56,919 log "GET /admin/products/catalogproduct/12/change/ HTTP/1.1" 200 44397
+INFO 2026-02-24 02:29:56,978 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:30:12,560 log "GET /admin/products/category/ HTTP/1.1" 200 16984
+INFO 2026-02-24 02:30:12,612 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-24 02:42:05,349 log "OPTIONS /api/accounts/login/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:06,578 log "POST /api/accounts/login/ HTTP/1.1" 200 580
+INFO 2026-02-24 02:42:06,676 log "OPTIONS /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:06,701 log "OPTIONS /api/vendor/earnings/summary/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:06,707 log "OPTIONS /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:06,710 log "OPTIONS /api/vendor/earnings/summary/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:06,770 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 02:42:06,788 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 02:42:06,806 log "GET /api/vendor/analytics/overview/?range=30d HTTP/1.1" 200 69
+INFO 2026-02-24 02:42:06,822 log "GET /api/vendor/earnings/summary/ HTTP/1.1" 200 158
+INFO 2026-02-24 02:42:08,448 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:42:08,488 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:42:12,689 log "OPTIONS /api/products/vendor/13/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:42:12,689 log "OPTIONS /api/products/vendor/13/ HTTP/1.1" 200 0
+WARNING 2026-02-24 02:42:12,706 log Not Found: /api/products/vendor/13/
+WARNING 2026-02-24 02:42:12,707 log "GET /api/products/vendor/13/ HTTP/1.1" 404 29
+WARNING 2026-02-24 02:42:12,721 log Not Found: /api/products/vendor/13/
+WARNING 2026-02-24 02:42:12,722 log "GET /api/products/vendor/13/ HTTP/1.1" 404 29
+INFO 2026-02-24 02:43:39,292 log "OPTIONS /api/vendor/products/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:43:39,293 log "OPTIONS /api/vendor/products/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:43:39,337 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:43:39,366 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:43:48,069 log "OPTIONS /api/vendor/products/13/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:43:48,109 log "DELETE /api/vendor/products/13/ HTTP/1.1" 204 0
+INFO 2026-02-24 02:43:50,794 log "OPTIONS /api/vendor/products/13/unhide/ HTTP/1.1" 200 0
+INFO 2026-02-24 02:43:50,816 log "PATCH /api/vendor/products/13/unhide/ HTTP/1.1" 200 29
+INFO 2026-02-24 02:44:32,265 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:44:32,417 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:44:35,309 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:44:35,327 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:44:35,407 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:44:35,419 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:48:51,333 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:48:51,353 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:48:54,608 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:48:54,629 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:48:54,970 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:48:54,987 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:48:57,243 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:48:57,276 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:48:59,704 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:48:59,725 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:00,113 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:00,155 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:01,932 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:49:01,957 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:49:11,036 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:11,054 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:11,349 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:11,410 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:24,007 log "PATCH /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:24,143 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:49:24,434 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:49:33,160 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:33,178 log "GET /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:33,514 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:33,529 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:49:42,046 log "PATCH /api/vendor/products/13/ HTTP/1.1" 200 270
+INFO 2026-02-24 02:49:42,204 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:49:42,266 log "GET /api/vendor/products/ HTTP/1.1" 200 1018
+INFO 2026-02-24 02:50:12,145 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:50:12,187 log "GET /api/products/categories/ HTTP/1.1" 200 748
+INFO 2026-02-24 02:50:59,344 log "POST /api/products/vendor/ HTTP/1.1" 201 1293
+INFO 2026-02-24 02:50:59,531 log "GET /api/vendor/products/ HTTP/1.1" 200 1292
+INFO 2026-02-24 02:50:59,551 log "GET /api/vendor/products/ HTTP/1.1" 200 1292
+INFO 2026-03-06 09:22:12,503 autoreload Watching for file changes with StatReloader
