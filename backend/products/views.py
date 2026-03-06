@@ -12,15 +12,15 @@ from .models import Category, CatalogProduct, Offer
 from .serializers import (
     CategorySerializer,
     OfferSerializer,
-    CatalogProductSerializer,
-    CatalogProductPublicSerializer,
-    VendorProductRetrieveSerializer,
-    VendorProductCreateUpdateSerializer,
+    CatalogProductSerializer,  # legacy public detail serializer you already had
+    CatalogProductPublicSerializer,  # customer list/detail (new)
+    VendorProductRetrieveSerializer,  # vendor edit payload (new)
+    VendorProductCreateUpdateSerializer,  # vendor create/update (new)
 )
 
 
 # ===============================
-# CATEGORY LIST
+# ✅ CATEGORY LIST
 # ===============================
 class CategoryListView(APIView):
     permission_classes = [AllowAny]
@@ -28,8 +28,8 @@ class CategoryListView(APIView):
     def get(self, request):
         categories = (
             Category.objects.filter(
-                catalogproduct__is_active=True,
-                catalogproduct__status=CatalogProduct.Status.PUBLISHED,
+                catalog_products__is_active=True,
+                catalog_products__status=CatalogProduct.Status.PUBLISHED,
             )
             .select_related("parent")
             .distinct()
@@ -39,7 +39,7 @@ class CategoryListView(APIView):
 
 
 # ===============================
-# DROPDOWN SERIALIZER (Vendor Add Product)
+# ✅ DROPDOWN SERIALIZER (Vendor Add Product)
 # ===============================
 class CatalogProductDropdownSerializer(serializers.ModelSerializer):
     category_name = serializers.CharField(source="category.name", read_only=True)
@@ -55,7 +55,7 @@ class CatalogProductDropdownSerializer(serializers.ModelSerializer):
 
 
 # ===============================
-# PUBLIC CATALOG PRODUCT LIST (Dropdown / legacy)
+# ✅ PUBLIC CATALOG PRODUCT LIST (Dropdown / legacy)
 # Used by:
 # - Vendor Add Product dropdown
 # ===============================
@@ -79,7 +79,7 @@ class PublicCatalogProductListView(APIView):
 
 
 # ===============================
-# CUSTOMER: PRODUCT LIST / SEARCH
+# ✅ CUSTOMER: PRODUCT LIST / SEARCH
 # GET /api/products/?q=&category=&brand=&min_price=&max_price=&sort=
 # sort: newest | price_asc | price_desc | name
 # ===============================
@@ -94,6 +94,7 @@ class CustomerProductListView(APIView):
         max_price = request.GET.get("max_price")
         sort = (request.GET.get("sort") or "").strip()
 
+        # Published + active products only (your marketplace catalog)
         qs = (
             CatalogProduct.objects.filter(
                 is_active=True,
@@ -104,6 +105,7 @@ class CustomerProductListView(APIView):
         )
 
         if q:
+            # Basic launch search (fast enough): name/slug/brand/category name
             qs = qs.filter(
                 Q(name__icontains=q)
                 | Q(slug__icontains=q)
@@ -117,6 +119,8 @@ class CustomerProductListView(APIView):
         if brand:
             qs = qs.filter(brand__iexact=brand)
 
+        # Price filter works by filtering products that have at least one offer in range
+        # (We filter offers via join, then distinct products)
         offer_filter = Q(offers__is_active=True, offers__in_stock=True) & (
             Q(offers__manage_inventory=False) | Q(offers__stock__gt=0)
         )
@@ -144,11 +148,13 @@ class CustomerProductListView(APIView):
         if min_price or max_price:
             qs = qs.filter(offer_filter).distinct()
 
+        # Sorting (simple; "best_price" is computed in serializer)
         if sort == "newest":
             qs = qs.order_by("-created_at")
         elif sort == "name":
             qs = qs.order_by("name")
         else:
+            # Default
             qs = qs.order_by("name")
 
         data = CatalogProductPublicSerializer(
@@ -157,6 +163,7 @@ class CustomerProductListView(APIView):
             context={"request": request},
         ).data
 
+        # If user asks price sorting, do it after serialization using computed best_price
         if sort in ["price_asc", "price_desc"]:
             def key_fn(item):
                 bp = item.get("best_price")
@@ -168,7 +175,7 @@ class CustomerProductListView(APIView):
 
 
 # ===============================
-# CUSTOMER: PRODUCT DETAIL
+# ✅ CUSTOMER: PRODUCT DETAIL
 # GET /api/products/<slug>/
 # ===============================
 class CustomerProductDetailView(APIView):
@@ -187,10 +194,7 @@ class CustomerProductDetailView(APIView):
         )
 
         if not product:
-            return Response(
-                {"error": "Product not found"},
-                status=status.HTTP_404_NOT_FOUND,
-            )
+            return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
 
         return Response(
             CatalogProductPublicSerializer(
@@ -201,8 +205,8 @@ class CustomerProductDetailView(APIView):
 
 
 # ===============================
-# LEGACY PUBLIC PRODUCT DETAIL
-# GET /api/catalog/<slug>/
+# ✅ LEGACY PUBLIC PRODUCT DETAIL (kept for compatibility)
+# GET /api/catalog/<slug>/  (if you still use it somewhere)
 # ===============================
 class CatalogProductDetailView(APIView):
     permission_classes = [AllowAny]
@@ -216,18 +220,16 @@ class CatalogProductDetailView(APIView):
         )
 
         if not product:
-            return Response(
-                {"error": "Product not found"},
-                status=status.HTTP_404_NOT_FOUND,
-            )
+            return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
 
         return Response(CatalogProductSerializer(product).data)
 
 
 # ===============================
-# Helpers
+# ✅ Helpers
 # ===============================
 def get_vendor_for_user(user):
+    # Your Vendor model uses related_name="vendors" on user FK
     return Vendor.objects.filter(user=user).order_by("-id").first()
 
 
@@ -242,8 +244,8 @@ def ensure_vendor_can_act(vendor):
 
 
 # ===============================
-# VENDOR: PRODUCTS (Create + List)
-# POST /api/vendor/products/
+# ✅ VENDOR: PRODUCTS (Create + List)
+# POST /api/vendor/products/   (multipart)
 # GET  /api/vendor/products/
 # ===============================
 class VendorProductListCreateView(APIView):
@@ -256,6 +258,7 @@ class VendorProductListCreateView(APIView):
         if not ok:
             return Response(payload, status=code)
 
+        # list catalog products where THIS vendor has offers
         qs = (
             CatalogProduct.objects.filter(offers__vendor=vendor)
             .select_related("category")
@@ -295,9 +298,9 @@ class VendorProductListCreateView(APIView):
 
 
 # ===============================
-# VENDOR: PRODUCT (Get for edit + Update)
+# ✅ VENDOR: PRODUCT (Get for edit + Update)
 # GET   /api/vendor/products/<id>/
-# PATCH /api/vendor/products/<id>/
+# PATCH /api/vendor/products/<id>/   (multipart)
 # ===============================
 class VendorProductDetailView(APIView):
     permission_classes = [IsAuthenticated]
@@ -321,6 +324,7 @@ class VendorProductDetailView(APIView):
         if not product:
             return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
 
+        # Vendor must own an offer for this catalog product to edit it
         if not Offer.objects.filter(vendor=vendor, catalog_product=product).exists():
             return Response(
                 {"error": "You do not have an offer for this product"},
@@ -344,6 +348,7 @@ class VendorProductDetailView(APIView):
         if not product:
             return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
 
+        # Vendor must own an offer for this catalog product to update it
         if not Offer.objects.filter(vendor=vendor, catalog_product=product).exists():
             return Response(
                 {"error": "You do not have an offer for this product"},
@@ -369,12 +374,14 @@ class VendorProductDetailView(APIView):
 
 
 # ===============================
-# VENDOR OFFERS (legacy)
+# ✅ VENDOR OFFERS (legacy)
+# kept as-is for backwards compatibility
 # ===============================
 class VendorOfferListCreateView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get_vendor(self, request):
+        # keep legacy behavior, but make it work with your Vendor model design
         return get_vendor_for_user(request.user)
 
     def get(self, request):
